@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="bg-white  border-gray-200 dark:border-gray-700 px-2 md:h-[85px] h-[65px] dark:bg-gray-800 shadow">
+        <nav className="bg-white  border-gray-200 dark:border-gray-700 px-2 md:h-[85px] h-[65px] shadow">
           <div className="container flex flex-wrap justify-between items-center mx-auto py-3 ">
             <Link href="/" className="flex items-center">
               <span className="flex self-center text-xs font-semibold whitespace-nowrap dark:text-white ">
@@ -40,7 +40,7 @@ export default function RootLayout({
               <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 <li>
                   <Link href="/">
-                    <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                    <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
                       <FiMail className="mt-1 text-red-600" />
                       <div className="flex-col">
                         <span className="block text-red-600">Email</span>
@@ -53,7 +53,7 @@ export default function RootLayout({
                 </li>
                 <li>
                   <Link href="/">
-                    <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                    <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                       <IoCallOutline className="mt-1 text-red-600" />
                       <div className="flex-col">
                         <span className="block text-red-600">call Us</span>
@@ -64,7 +64,7 @@ export default function RootLayout({
                 </li>
                 <li>
                   <Link href="/">
-                    <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                    <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                       <GrLocation className="mt-1 text-red-600" />
                       <div className="flex-col">
                         <span className="block text-red-600">Location</span>

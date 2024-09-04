@@ -10,7 +10,7 @@ export default function Home() {
           src={"/Rectangle 2.png"}
           alt="BannerImg"
           height={500}
-          width={1440}
+          width={2560}
         />
         <span className="absolute font-bold  lg:top-[200px] top-[90px] lg:text-4xl text-xl md:top-[160px]   text-white">
           About Us
@@ -75,43 +75,65 @@ export default function Home() {
           </p>
         </div>
       </div>
-      {/* box */}
 
+      {/* box */}
       <div className="box_parent grid lg:grid-cols-3 grid-cols-1  lg:gap-0.5  gap-[10px] my-10 px-10">
-        <div className="box1      font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg rounded-s-lg  lg:rounded-none lg:rounded-s-lg bg-[#14516A]">
-            <div className="flex lg:flex-col flex-row item-center lg:w-72 w-full">
-              <div className="icon1 relative w-[20px]  h-[20px] m-5  p-5">
+        {/* box1 */}
+        <div className="box1 font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg rounded-s-lg  lg:rounded-none lg:rounded-s-lg bg-[#14516A]">
+          <div className="md:ms-5 md:mt-10">
+            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-5">
+              <div className="icon1 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
                 <Image src={"/icon1.png"} alt="icon1" fill />
               </div>
-            <div className="sub_heading1 mx-5 mt-6">
-            <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px]">Quality Driven</span>
-            </div>
-            
-            </div>
-            <p className="font-normal text-[8px] md:text-[16px] mx-5">We always deliver the best quality and performance for both our products and services.</p>
-         
-        </div>
+              <div className="sub_heading1">
+                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">Quality Driven</span>
+              </div>
 
-        <div className="box2 flex lg:flex-col flex-row items-center lg:items-start   font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg lg:rounded-none bg-[#14516A]">
-            <div className="icon2 relative w-[20px] h-[20px]  m-5 p-5">
-              <Image src={"/icon2.png"} alt="icon2" fill />
             </div>
-          <div className="sub_heading2 mx-5">
-            <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px]">Corporate Training</span>
-            <p className="font-normal text-[8px] md:text-[16px]">We always deliver the best quality and performance for both our products and services.</p>
+            <div>
+              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[269px]">We always deliver the best quality and performance for both our products and services.</p>
+            </div>
+          </div>
+        </div>
+        {/* box2 */}
+        <div className="box2  font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg lg:rounded-none bg-[#14516A]">
+          <div className="md:ms-5 md:mt-10">
+            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-5">
+              <div className="icon2 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
+                <Image src={"/icon2.png"} alt="icon2" fill />
+              </div>
+              <div className="sub_heading1">
+                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">Corporate Training</span>
+              </div>
+            </div>
+            <div>
+              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[335px]">We can tailor our courses to your needs and create unique programmes that may include various workshops and simulations.</p>
+            </div>
           </div>
         </div>
 
-        <div className="box3 flex lg:flex-col flex-row items-center lg:items-start   font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-e-lg rounded-lg  lg:rounded-none  lg:rounded-e-lg bg-[#14516A]">
-            <div className="icon3  w-[20px] h-[20px] relative m-5 p-5">
-              <Image src={"/Icon 3.png"} alt="Icon 3" fill />
+        {/* box3 */}
+        <div className="box3  font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-e-lg rounded-lg  lg:rounded-none  lg:rounded-e-lg bg-[#14516A]">
+          <div className="md:ms-5 md:mt-10">
+            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-5">
+              <div className="icon3 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
+                <Image src={"/Icon 3.png"} alt="icon3" fill />
+              </div>
+              <div className="sub_heading1">
+                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">Global Sourcing</span>
+              </div>
             </div>
-          <div className="sub_heading3 mx-5">
-            <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px]">Global Sourcing</span>
-            <p className="font-normal text-[8px] md:text-[16px]">We can tailor our courses to your needs and create unique programmes that may include various workshops and simulations.</p>
+            <div>
+              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[269px]">Exploiting global efficiencies in the delivery of our products and services.</p>
+            </div>
           </div>
+
+
+
         </div>
       </div>
+
+
     </main>
   );
 }
