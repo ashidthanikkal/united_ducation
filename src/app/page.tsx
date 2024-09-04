@@ -4,6 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 export default function Home() {
   return (
     <main>
+      {/* banner img */}
       <div className="flex flex-col items-center justify-between w-100 static">
         <Image
           src={"/Rectangle 2.png"}
@@ -16,6 +17,7 @@ export default function Home() {
         </span>
       </div>
 
+      {/* company_overview */}
       <div className="company_overview  p-10 flex flex-col md:flex-row">
         <div className="overview1 w-full md:flex-col flex-row">
           <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
@@ -37,7 +39,10 @@ export default function Home() {
             >
               View Our Courses
             </button>
-           <div> <IoIosArrowForward className="text-red-600 nd:w-10 md:hidden" /></div>
+            <div>
+              {" "}
+              <IoIosArrowForward className="text-red-600 nd:w-10 md:hidden" />
+            </div>
           </div>
         </div>
 
@@ -52,12 +57,11 @@ export default function Home() {
           <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 text-left">
             UE is specialized in educational and training services, ranging from
             language education, business skills development, and special
-            technical and vocational training services. 
+            technical and vocational training services.
             <span className="hidden md:inline">
-            We have a blend of
-            products and services for all public, private, non-governmental,
-            educational and individual customers who are looking for excellent
-            educational solutions.
+              We have a blend of products and services for all public, private,
+              non-governmental, educational and individual customers who are
+              looking for excellent educational solutions.
             </span>
           </p>
 
@@ -69,6 +73,39 @@ export default function Home() {
             with up to date technologies and excellent services and support to
             every customer.
           </p>
+        </div>
+      </div>
+      {/* box */}
+
+      <div className="box_parent grid lg:grid-cols-3 grid-cols-1  lg:gap-0.5  gap-[10px] my-10 px-10">
+        <div className="box1 flex lg:flex-col flex-row items-center lg:items-start   font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg rounded-s-lg  lg:rounded-none lg:rounded-s-lg bg-[#14516A]">
+            <div className="icon1 w-[20px] relative h-[20px] m-5  p-5">
+              <Image src={"/icon1.png"} alt="icon1" fill />
+            </div>
+          <div className="sub_heading1 mx-5">
+          <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px]">Quality Driven</span>
+          <p className="font-normal text-[8px] md:text-[16px]">We always deliver the best quality and performance for both our products and services.</p>
+          </div>
+        </div>
+
+        <div className="box2 flex lg:flex-col flex-row items-center lg:items-start   font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg lg:rounded-none bg-[#14516A]">
+            <div className="icon2 w-[20px] h-[20px] relative m-5 p-5">
+              <Image src={"/icon2.png"} alt="icon2" fill />
+            </div>
+          <div className="sub_heading2 mx-5">
+            <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px]">Corporate Training</span>
+            <p className="font-normal text-[8px] md:text-[16px]">We always deliver the best quality and performance for both our products and services.</p>
+          </div>
+        </div>
+
+        <div className="box3 flex lg:flex-col flex-row items-center lg:items-start   font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-e-lg rounded-lg  lg:rounded-none  lg:rounded-e-lg bg-[#14516A]">
+            <div className="icon3 w-[20px] h-[20px] relative m-5 p-5">
+              <Image src={"/Icon 3.png"} alt="Icon 3" fill />
+            </div>
+          <div className="sub_heading3 mx-5">
+            <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px]">Global Sourcing</span>
+            <p className="font-normal text-[8px] md:text-[16px]">We can tailor our courses to your needs and create unique programmes that may include various workshops and simulations.</p>
+          </div>
         </div>
       </div>
     </main>
