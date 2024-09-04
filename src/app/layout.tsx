@@ -6,6 +6,7 @@ import Image from "next/image";
 import { FiMail } from "react-icons/fi";
 import { IoCallOutline } from "react-icons/io5";
 import { GrLocation } from "react-icons/gr";
+import { IoMdArrowRoundForward } from "react-icons/io";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="bg-white  border-gray-200 dark:border-gray-700 px-2 md:h-[85px] h-[60px] dark:bg-gray-800 shadow">
+        <nav className="bg-white  border-gray-200 dark:border-gray-700 px-2 md:h-[85px] h-[65px] dark:bg-gray-800 shadow">
           <div className="container flex flex-wrap justify-between items-center mx-auto py-3 ">
             <Link href="/" className="flex items-center">
-              <span className="flex self-center text-xs font-semibold whitespace-nowrap dark:text-white">
+              <span className="flex self-center text-xs font-semibold whitespace-nowrap dark:text-white ">
                 <Image
                   src="/united-education-logo 1.png"
                   alt="united-education-logo 1"
@@ -43,7 +44,9 @@ export default function RootLayout({
                       <FiMail className="mt-1 text-red-600" />
                       <div className="flex-col">
                         <span className="block text-red-600">Email</span>
-                        <span className="font-light">info@united-education.com</span>
+                        <span className="font-light">
+                          info@united-education.com
+                        </span>
                       </div>
                     </span>
                   </Link>
@@ -65,12 +68,14 @@ export default function RootLayout({
                       <GrLocation className="mt-1 text-red-600" />
                       <div className="flex-col">
                         <span className="block text-red-600">Location</span>
-                        <span className="font-light">Erbil,Empire Business Tower,Tower 4,Floor 15, Office NO 1</span>
+                        <span className="font-light">
+                          Erbil,Empire Business Tower,Tower 4,Floor 15, Office
+                          NO 1
+                        </span>
                       </div>
                     </span>
                   </Link>
                 </li>
-
               </ul>
             </div>
             <div className="flex items-center">
@@ -96,13 +101,91 @@ export default function RootLayout({
                 </svg>
               </button>
             </div>
-
           </div>
         </nav>
 
         {children}
 
-        <footer>Footer</footer>
+        {/* footer */}
+
+        <footer className=" w-full bg-[#022837]">
+
+          <div className="parent container justify-evenly flex flex-col w-full lg:flex-row  md:text-left  text-center  mx-auto p-10 ">
+            {/* child 1 */}
+            <div className="fchild_1 flex flex-col lg:flex-col md:flex-row  md:justify-between w-full lg:w-72  items-center md:items-start   text-white ">
+             <div className="">
+                <Image
+                  src="/sticky-logo 1.png"
+                  alt="united-education-logo 1"
+                  width={110}
+                  height={60}
+                  className="p-3"
+                />{" "}
+             </div>
+              <div className="w-[267px] lg:mt-[48px]">
+                <span className="text-[18px] font-normal ">Sign up for releases & product updates...</span>
+                <form className="w-full max-w-xs">
+                  <div className="flex items-center border-b border-[#CFCFCF] py-2">
+                    <input
+                      className="appearance-none bg-transparent border-none w-full text-[#CFCFCF] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                      type="text"
+                      placeholder="Enter email Address"
+                      aria-label="Full name"
+                    />
+                    <button
+                      className="flex-shrink-0 border-transparent border-4 text-[#CFCFCF] hover:text-[#CFCFCF]-800 text-sm py-1 px-2 rounded"
+                      type="button"
+                    >
+                      <IoMdArrowRoundForward />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div className="fchild_2 mt-5 flex flex-col md:flex-row flex-wrap lg:gap-[78px] gap-0  justify-center text-center md:text-left md:justify-around">
+              <div className="about">
+                <h2 className="text-white">About</h2>
+                <ul className="text-[#CFCFCF] lg:text-lg text-sm">
+                  <li>Our Story</li>
+                  <li>Treatments Safer</li>
+                  <li>Journal</li>
+                  <li>Candles</li>
+                </ul>
+              </div>{" "}
+
+              <div className="about">
+                <h2 className="text-white">Company</h2>
+                <ul className="text-[#CFCFCF] md:block hidden lg:text-lg text-sm">
+                  <li>About</li>
+                  <li>Contact</li>
+                  <li>Products</li>
+                  <li>Privacy</li>
+                </ul>
+              </div>{" "}
+
+              <div className="about">
+                <h2 className="text-white">Help</h2>
+                <ul className="text-[#CFCFCF] md:block hidden lg:text-lg text-sm">
+                  <li>FAQs</li>
+                  <li>Terms of service</li>
+                  <li>Cookies</li>
+                  <li>Privacy</li>
+                </ul>
+              </div>{" "}
+
+              <div className="about">
+                <h2 className="text-white">SocialMedia</h2>
+                <ul className="text-[#CFCFCF] md:block hidden lg:text-lg text-sm">
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                  <li>Linkedin</li>
+                </ul>
+              </div>{" "}
+
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
