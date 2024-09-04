@@ -78,18 +78,22 @@ export default function Home() {
       {/* box */}
 
       <div className="box_parent grid lg:grid-cols-3 grid-cols-1  lg:gap-0.5  gap-[10px] my-10 px-10">
-        <div className="box1 flex lg:flex-col flex-row items-center lg:items-start   font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg rounded-s-lg  lg:rounded-none lg:rounded-s-lg bg-[#14516A]">
-            <div className="icon1 w-[20px] relative h-[20px] m-5  p-5">
-              <Image src={"/icon1.png"} alt="icon1" fill />
+        <div className="box1      font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg rounded-s-lg  lg:rounded-none lg:rounded-s-lg bg-[#14516A]">
+            <div className="flex lg:flex-col flex-row item-center lg:w-72 w-full">
+              <div className="icon1 relative w-[20px]  h-[20px] m-5  p-5">
+                <Image src={"/icon1.png"} alt="icon1" fill />
+              </div>
+            <div className="sub_heading1 mx-5 mt-6">
+            <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px]">Quality Driven</span>
             </div>
-          <div className="sub_heading1 mx-5">
-          <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px]">Quality Driven</span>
-          <p className="font-normal text-[8px] md:text-[16px]">We always deliver the best quality and performance for both our products and services.</p>
-          </div>
+            
+            </div>
+            <p className="font-normal text-[8px] md:text-[16px] mx-5">We always deliver the best quality and performance for both our products and services.</p>
+         
         </div>
 
         <div className="box2 flex lg:flex-col flex-row items-center lg:items-start   font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg lg:rounded-none bg-[#14516A]">
-            <div className="icon2 w-[20px] h-[20px] relative m-5 p-5">
+            <div className="icon2 relative w-[20px] h-[20px]  m-5 p-5">
               <Image src={"/icon2.png"} alt="icon2" fill />
             </div>
           <div className="sub_heading2 mx-5">
@@ -99,7 +103,7 @@ export default function Home() {
         </div>
 
         <div className="box3 flex lg:flex-col flex-row items-center lg:items-start   font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-e-lg rounded-lg  lg:rounded-none  lg:rounded-e-lg bg-[#14516A]">
-            <div className="icon3 w-[20px] h-[20px] relative m-5 p-5">
+            <div className="icon3  w-[20px] h-[20px] relative m-5 p-5">
               <Image src={"/Icon 3.png"} alt="Icon 3" fill />
             </div>
           <div className="sub_heading3 mx-5">
