@@ -86,12 +86,16 @@ export default function Home() {
                 <Image src={"/icon1.png"} alt="icon1" fill />
               </div>
               <div className="sub_heading1">
-                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">Quality Driven</span>
+                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">
+                  Quality Driven
+                </span>
               </div>
-
             </div>
             <div>
-              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[269px]">We always deliver the best quality and performance for both our products and services.</p>
+              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[269px]">
+                We always deliver the best quality and performance for both our
+                products and services.
+              </p>
             </div>
           </div>
         </div>
@@ -103,11 +107,16 @@ export default function Home() {
                 <Image src={"/icon2.png"} alt="icon2" fill />
               </div>
               <div className="sub_heading1">
-                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">Corporate Training</span>
+                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">
+                  Corporate Training
+                </span>
               </div>
             </div>
             <div>
-              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[335px]">We can tailor our courses to your needs and create unique programmes that may include various workshops and simulations.</p>
+              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[335px]">
+                We can tailor our courses to your needs and create unique
+                programmes that may include various workshops and simulations.
+              </p>
             </div>
           </div>
         </div>
@@ -120,34 +129,38 @@ export default function Home() {
                 <Image src={"/Icon 3.png"} alt="icon3" fill />
               </div>
               <div className="sub_heading1">
-                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">Global Sourcing</span>
+                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">
+                  Global Sourcing
+                </span>
               </div>
             </div>
             <div>
-              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[269px]">Exploiting global efficiencies in the delivery of our products and services.</p>
+              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[269px]">
+                Exploiting global efficiencies in the delivery of our products
+                and services.
+              </p>
             </div>
           </div>
-
-
-
         </div>
       </div>
 
       {/* about us */}
-
-      <div className="aboutus px-5">
-        <div className="aboutus_parent flex-col-reverse flex md:flex-row items-center">
-
-          <div className="aboutus_child1 md:w-1/2">
-            <div className="grid grid-rows-3 grid-flow-col gap-4">
-              <div className="col-span-2 bg-lime-600 rounded-lg">01</div>
-              <div className="row-span-2 col-span-2 bg-blue-600 rounded-lg">02</div>
-              <div className="row-span-3 bg-amber-900 rounded-lg">03</div>
+      <div className="aboutus px-10">
+        <div className="aboutus_parent flex-col-reverse flex md:flex-row ">
+          <div className="aboutus_child1 md:w-1/2 w-full grid grid-rows-2 grid-flow-col gap-3 my-5">
+            <div className="relative h-[92px] md:h-full  rounded-xl">
+              <Image src={"/Rectangle14.png"} alt="Rectangle14" fill />
+            </div>
+            <div className="relative  h-[92px] md:h-full md: rounded-xl">
+              <Image src={"/Rectangle15.png"} alt="Rectangle15" fill />
+            </div>
+            <div className="relative h-full row-span-2 rounded-xl">
+              <Image src={"/Rectangle16.png"} alt="Rectangle16" fill />
             </div>
           </div>
 
           <div className="aboutus_child2 md:w-1/2">
-            <div className="about_overview  p-10 ">
+            <div className="about_overview  sm:p-[.25rem] md:p-10">
               <div className="overview1 w-full md:flex-col flex-row">
                 <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
                   <div className="w-10 border-t-2 border-[#DC272F] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
@@ -172,41 +185,112 @@ export default function Home() {
               <div className="overview2 w-full ">
                 <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-[#DC272F] mt-2 text-left">
                   UE is a private educational and training services provider,
-                  following huge educational and skill needs among our people that
-                  make it difficult for the country and nation to develop and cope
-                  with the rest of the world.
+                  following huge educational and skill needs among our people
+                  that make it difficult for the country and nation to develop
+                  and cope with the rest of the world.
                 </p>
 
                 <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 text-left">
-                  UE is specialized in educational and training services, ranging from
-                  language education, business skills development, and special
-                  technical and vocational training services.
-                  <span className="hidden sm:inline">
-                    We have a blend of products and services for all public, private,
-                    non-governmental, educational and individual customers who are
-                    looking for excellent educational solutions.
+                  UE is specialized in educational and training services,
+                  ranging from language education, business skills development,
+                  and special technical and vocational training services.
+                  <span className="lg:hidden hidden md:inline">
+                    We have a blend of products and services for all public,
+                    private, non-governmental, educational and individual
+                    customers who are looking for excellent educational
+                    solutions.
                   </span>
                 </p>
 
                 <button
-                    type="button"
-                    className="text-white bg-[#14516A] hover:bg-[#14516A] w-48 mt-7 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 hidden md:block"
-                  >
-                    View Our Services
-                  </button>
-
-
+                  type="button"
+                  className="text-white bg-[#14516A] hover:bg-[#14516A] w-48 mt-7 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 hidden md:block"
+                >
+                  View Our Services
+                </button>
               </div>
             </div>
-
           </div>
-
-
         </div>
       </div>
 
+      {/* mission and vision */}
 
+      <div className="mission_vison h-[409px] bg-[#14516A] md:h-[482px] lg:h-[867px] lg:bg-[#F8F8F8]">
 
+       <div className=" md:flex-row flex-col-reverse flex lg:flex-row px-10 md:pt-10">
+          <div className="mission_visonchild1 w-full md:w-1/2">
+            <div className="sm:p-[.25rem] md:p-[1.5rem]">
+              <div className="w-full md:flex-col flex-row">
+                <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
+                  <div className="w-10 border-t-2 border-white lg:border-[#DC272F] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
+                  <div>
+                    <p className="font-normal text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-white lg:text-[#DC272F]">
+                      Our Mission & Vision
+                    </p>
+                  </div>
+                </div>
+  
+                <div className="vision_sub lg:mt-14">
+                  <h2 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                    Our Vision
+                  </h2>
+                  <div></div>
+                </div>
+  
+                <div className=" w-full ">
+                  <p className="font-semibold text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
+                    UNITED EDUCAION
+                  </p>
+  
+                  <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
+                    Our vision is having a trained, knowledgeable and skillful
+                    future generation in our country who can guarantee a better
+                    life for themselves and the whole nation by been powerful
+                    producible human resources.
+                  </p>
+                </div>
+  
+                  <div className="mission_sub lg:mt-14">
+                    <h2 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                      Our Mission
+                    </h2>
+                  </div>
+    
+                  <div className="overview2 w-full ">
+                    <p className="font-semibold text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
+                      UNITED EDUCAION
+                    </p>
+    
+                    <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
+                      Our vision is having a trained, knowledgeable and skillful
+                      future generation in our country who can guarantee a better
+                      life for themselves and the whole nation by been powerful
+                      producible human resources.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div className="mission_visonchild2 w-full md:w-1/2 ">
+          <div className="aboutus_child1  w-full grid lg:grid-rows-4 grid-flow-col gap-3 my-5">
+              <div className="relative lg:row-span-3 lg:col-span-6 h-[137px] md:h-[389px] lg:h-[510px]  rounded-xl">
+                <Image src={"/Rectangle72.png"} alt="Rectangle14" fill />
+              </div>
+              <div className="relative lg:col-span-4  h-[150px] hidden lg:inline rounded-xl">
+                <Image src={"/Rectangle73.png"} alt="Rectangle15" fill />
+              </div>
+              <div className="relative lg:col-span-2  h-[150px] hidden lg:inline rounded-xl">
+                <Image src={"/Rectangle74.png"} alt="Rectangle16" fill />
+              </div>
+            </div>
+  
+  
+          </div>
+       </div>
+
+      </div>
     </main>
   );
 }
