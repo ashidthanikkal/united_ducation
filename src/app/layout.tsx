@@ -122,7 +122,7 @@ export default function RootLayout({
                   className="p-3"
                 />{" "}
              </div>
-              <div className="w-[267px] lg:mt-[48px]">
+              <div className="w-[267px] lg:mt-[30px]">
                 <span className="text-[18px] font-normal ">Sign up for releases & product updates...</span>
                 <form className="w-full max-w-xs">
                   <div className="flex items-center border-b border-[#CFCFCF] py-2">
@@ -143,10 +143,10 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="fchild_2 mt-5 flex flex-col md:flex-row flex-wrap lg:gap-[78px] gap-0  justify-center text-center md:text-left md:justify-around">
+            <div className="fchild_2 mt-5 flex flex-col md:flex-row flex-wrap lg:gap-[63px] gap-0  justify-center text-center md:text-left md:justify-around">
               <div className="about">
                 <h2 className="text-white">About</h2>
-                <ul className="text-[#CFCFCF] lg:text-lg text-sm">
+                <ul className="text-[#CFCFCF] lg:text-lg  text-sm">
                   <li>Our Story</li>
                   <li>Treatments Safer</li>
                   <li>Journal</li>

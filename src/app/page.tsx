@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward, IoIosArrowRoundForward } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -215,10 +215,8 @@ export default function Home() {
       </div>
 
       {/* mission and vision */}
-
       <div className="mission_vison h-[409px] bg-[#14516A] md:h-[482px] lg:h-[867px] lg:bg-[#F8F8F8]">
-
-       <div className=" md:flex-row flex-col-reverse flex lg:flex-row px-10 md:pt-10">
+        <div className=" md:flex-row flex-col-reverse flex lg:flex-row px-10 md:pt-10">
           <div className="mission_visonchild1 w-full md:w-1/2">
             <div className="sm:p-[.25rem] md:p-[1.5rem]">
               <div className="w-full md:flex-col flex-row">
@@ -230,19 +228,18 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-  
+
                 <div className="vision_sub lg:mt-14">
                   <h2 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
                     Our Vision
                   </h2>
-                  <div></div>
                 </div>
-  
+
                 <div className=" w-full ">
                   <p className="font-semibold text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
                     UNITED EDUCAION
                   </p>
-  
+
                   <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
                     Our vision is having a trained, knowledgeable and skillful
                     future generation in our country who can guarantee a better
@@ -250,33 +247,38 @@ export default function Home() {
                     producible human resources.
                   </p>
                 </div>
-  
-                  <div className="mission_sub lg:mt-14">
-                    <h2 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
-                      Our Mission
-                    </h2>
-                  </div>
-    
-                  <div className="overview2 w-full ">
-                    <p className="font-semibold text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
-                      UNITED EDUCAION
-                    </p>
-    
-                    <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
-                      Our vision is having a trained, knowledgeable and skillful
-                      future generation in our country who can guarantee a better
-                      life for themselves and the whole nation by been powerful
-                      producible human resources.
-                    </p>
+
+                <div className="mission_sub lg:mt-14">
+                  <h2 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                    Our Mission
+                  </h2>
+                </div>
+
+                <div className="overview2 w-full ">
+                  <p className="font-semibold text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
+                    UNITED EDUCAION
+                  </p>
+
+                  <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
+                    Our vision is having a trained, knowledgeable and skillful
+                    future generation in our country who can guarantee a better
+                    life for themselves and the whole nation by been powerful
+                    producible human resources.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-  
+
           <div className="mission_visonchild2 w-full md:w-1/2 ">
-          <div className="aboutus_child1  w-full grid lg:grid-rows-4 grid-flow-col gap-3 my-5">
+            <div className="aboutus_child1  w-full grid lg:grid-rows-4 grid-flow-col gap-3 my-5">
               <div className="relative lg:row-span-3 lg:col-span-6 h-[137px] md:h-[389px] lg:h-[510px]  rounded-xl">
-                <Image src={"/Rectangle72.png"} alt="Rectangle14" fill />
+                <Image
+                  src={"/Rectangle72.png"}
+                  alt="Rectangle14"
+                  fill
+                  className="object-cover "
+                />
               </div>
               <div className="relative lg:col-span-4  h-[150px] hidden lg:inline rounded-xl">
                 <Image src={"/Rectangle73.png"} alt="Rectangle15" fill />
@@ -285,12 +287,331 @@ export default function Home() {
                 <Image src={"/Rectangle74.png"} alt="Rectangle16" fill />
               </div>
             </div>
-  
-  
           </div>
-       </div>
-
+        </div>
       </div>
+
+      {/* our latest blog */}
+      <div className="my-10 mx-10">
+        <div className="flex items-center justify-between lg:justify-center">
+          <div>
+            <div className="flex gap-2 lg:justify-center">
+              <div className="w-10 border-t-2 border-[#DC272F] flex justify-center items-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
+              <p>LATEST NEWS</p>
+              <div className="w-10 border-t-2   border-[#DC272F] lg:flex hidden justify-center items-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
+            </div>
+            <h2 className="text-[#04374B] text-start lg:text-center mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[22px] lg:leading-[52px] lg:text-[40px] ">
+              Our Latest blog
+            </h2>
+          </div>
+          <div className="icon_arow text-red-600 lg:hidden">
+            <IoIosArrowForward />
+          </div>
+        </div>
+        <div className="grid grid-cols-3 my-10 gap-4  overflow-x-scroll md:overflow-hidden">
+          <div className="card1">
+            <div className="relative h-[145px] md:h-[211px] lg:h-[336px] rounded-xl">
+              <Image src={"/Rectangle129.png"} alt="Rectangle129" fill />
+            </div>
+            <div className="discripton1">
+              <h2 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+                Drilling and well control simulator.
+              </h2>
+              <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
+                With a team of skilled therapists, we can accommodate requests
+                at short notice and maintain.
+              </p>
+              <div className="flex justify-start gap-3 text-[#DC272F] mt-1">
+                <a
+                  className="font-normal text-[8px] md:text-[12px] lg:text-[16px]"
+                  href="/"
+                >
+                  <u>ReadMore</u>
+                </a>
+                <span className="font-normal text-[13px] md:text-[20px] lg:text-[25px]">
+                  <IoIosArrowRoundForward />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="card2">
+            <div className="relative  h-[145px] md:h-[211px] lg:h-[336px] rounded-xl">
+              <Image src={"/Rectangle130.png"} alt="Rectangle130" fill />
+            </div>
+            <div className="discripton2">
+              <h2 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+                Drilling and well control simulator.
+              </h2>
+              <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
+                With a team of skilled therapists, we can accommodate requests
+                at short notice and maintain.
+              </p>
+              <div className="mt-1 flex justify-start gap-3 text-[#DC272F]">
+                <a
+                  className="font-normal text-[8px] md:text-[12px] lg:text-[16px]"
+                  href="/"
+                >
+                  <u>ReadMore</u>
+                </a>
+                <span className="font-normal text-[13px] md:text-[20px] lg:text-[25px]">
+                  <IoIosArrowRoundForward />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="card3">
+            <div className="relative h-[145px] md:h-[211px] lg:h-[336px] rounded-xl">
+              <Image src={"/Rectangle131.png"} alt="Rectangle131" fill />
+            </div>
+            <div className="discripton3">
+              <h2 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+                Drilling and well control simulator.
+              </h2>
+              <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
+                With a team of skilled therapists, we can accommodate requests
+                at short notice and maintain.
+              </p>
+              <div className="mt-1 flex justify-start gap-3 text-[#DC272F]">
+                <a
+                  className="font-normal text-[8px] md:text-[12px] lg:text-[16px]"
+                  href="/"
+                >
+                  <u>ReadMore</u>
+                </a>
+                <span className="font-normal text-[13px] md:text-[20px] lg:text-[25px]">
+                  <IoIosArrowRoundForward />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="lg:block hidden lg:text-center">
+          <button
+            type="button"
+            className=" py-2.5 px-5 me-2 mb-2 text-sm font-medium text-[#14516A] focus:outline-none bg-white rounded-lg border border-[#14516A] hover:bg-gray-100  focus:z-10 focus:ring-4 focus:ring-gray-100"
+          >
+            Alternative
+          </button>
+        </div>
+      </div>
+
+      {/*our statistics  */}
+      <div className="relative h-[222px] md:h-[432px] lg:h-[700px] ">
+        <div className="inset-0 w-full absolute ">
+          <Image src={"/Rectangle132.png"} alt="Rectangle132.png " fill />
+        </div>
+
+        {/* statistic content */}
+        <div className="statistics relative top-[10px] md:top-[30px] lg:top-[40px] ">
+          <div className="parent flex items-baseline md:items-center justify-between md:mx-10 mx-5">
+            <div className="child1 w-[40%]">
+              <div className="flex  md:flex-row-reverse items-center md:justify-end gap-[10px]">
+                <div className="w-6 border-t-2 border-[#000000] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
+                <div>
+                  <p className="font-normal text-[8px] leading-[8px] md:leading-[12px]  lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#000000]">
+                    STATISTICS
+                  </p>
+                </div>
+              </div>
+              <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+                Our Main Statistics
+              </h1>
+            </div>
+
+            <div className="child2 w-[60%]">
+              <p className="font-normal text-right text-[8px] md:text-[12px] lg:text-[18px]">
+                UE is specialized in educational and training services, ranging
+                from language education, business skills development, and
+                special technical and vocational training services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* counts */}
+
+        <div className="counts  relative top-[30px] md:top-[80px] lg:top-[110px] grid grid-cols-4 mx-2 md:mx-10">
+        <div className="text-center">
+          <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">650+</h1>
+          <p className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Project Completed</p>
+        </div>
+        <div className="text-center border-l border-l-[#049CB3]">
+          <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">200+</h1>
+          <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Team Engineers</p>
+        </div>
+        <div className="text-center  border-l border-l-[#049CB3]">
+          <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">300+</h1>
+          <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Clients Worldwide</p>
+        </div>
+        <div className="text-center  border-l border-l-[#049CB3]">
+          <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">10+</h1>
+          <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Years of Experiences</p>
+        </div>
+      </div>
+
+
+        {/* contact us */}
+        <div className="relative top-[16px] md:top-[100px] lg:top-[150px]  card flex-col md:flex-row flex m-10 md:px-20 ">
+          {/* img div */}
+          <div className="relative md:w-1/3 h-[123px] md:h-[305px] lg:h-[450px] md:hidden block">
+            <Image src={"/Rectangle135.png"} alt="Rectangle132" fill />
+          </div>
+          <div className="relative md:w-1/3 h-[123px] md:h-[305px] lg:h-[450px] md:block hidden">
+            <Image src={"/Rectangle135(1).png"} alt="Rectangle132" fill />
+          </div>
+
+          {/* form div */}
+          <div className="z-50 md:w-2/3 bg-[#022837] h-[360px] md:h-[305px] lg:h-[450px] md:rounded-r-[20px] md:rounded-bl-none rounded-b-[20px] lg:p-10">
+            <div className="mt-5 md:ms-10 flex flex-col justify-center items-center md:justify-center md:items-start">
+              <div className="flex gap-2 items-center">
+                <div className="w-10 border-t-2 border-[#FAFAFA] flex md:hidden justify-center items-center text-[2px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]"></div>
+                <p className="text-[#FAFAFA] leading-[2px] text-[10px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px] ">
+                  CONTACT US
+                </p>
+                <div className="w-10 border-t-2   border-[#FAFAFA] lg:flex  justify-center items-center  text-[5px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]"></div>
+              </div>
+              <h2 className="text-[#FAFAFA]  mt-3 font-normal md:font-semibold   text-[14px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px] ">
+                Keep in Touch
+              </h2>
+            </div>
+
+            <div className="forms  md:mt-[10px]">
+              <form className="px-10">
+                <div className="npem4 md:flex  justify-between gap-4">
+                  {/* name and phone */}
+                  <div className="name_phone grow ">
+                    {/* NAME */}
+                    <div className="relative z-0 w-full mb-5 group mt-1">
+                      <input
+                        type="text"
+                        name="floating_name"
+                        id="floating_name"
+                        className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px]   text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
+                        placeholder=" "
+                        required
+                      />
+                      <label
+                        htmlFor="floating_name"
+                        className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      >
+                        Name*
+                      </label>
+                    </div>
+                    {/* PHONE */}
+                    <div className="relative z-0 w-full mb-5 group mt-1">
+                      <input
+                        type="text"
+                        name="floating_phone"
+                        id="floating_phone"
+                        className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px] text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
+                        placeholder=" "
+                        required
+                      />
+                      <label
+                        htmlFor="floating_phone"
+                        className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      >
+                        Phone*
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* email and subject */}
+                  <div className="email_subject grow ">
+                    {/* EMAIL */}
+                    <div className="relative z-0 w-full mb-5 group mt-1">
+                      <input
+                        type="email"
+                        name="floating_email"
+                        id="floating_email"
+                        className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px] text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
+                        placeholder=" "
+                        required
+                      />
+                      <label
+                        htmlFor="floating_email"
+                        className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      >
+                        Email*
+                      </label>
+                    </div>
+
+                    {/* SUBJECT */}
+                    <div className="relative z-0 w-full mb-5 group mt-1 hidden md:block">
+                      <input
+                        type="email"
+                        name="floating_subject"
+                        id="floating_subject"
+                        className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px] text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
+                        placeholder=" "
+                        required
+                      />
+                      <label
+                        htmlFor="floating_subject"
+                        className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      >
+                        Subject*
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                {/* MESSAGE */}
+                <div className="relative z-0 w-full mb-5 group mt-1">
+                  <input
+                    type="email"
+                    name="floating_message"
+                    id="floating_message"
+                    className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px] text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    htmlFor="floating_message"
+                    className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Message*
+                  </label>
+                </div>
+                <div className="text-center md:text-left">
+                  <button
+                    type="button"
+                    className="focus:outline-none text-white bg-[#DC272F] hover:bg-red-800 font-medium rounded-md text-[10px] md:text-[10px] lg:text-[14px]   me-2 mb-2 w-[89px]  h-[22px] md:w-[93px]  md:h-[29px] lg:w-[138px]  lg:h-[56px] lg:text-[16px] lg:font-medium"
+                  >
+                    Submit Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* logo */}
+      <div className="mt-[410px] md:mt-[160px] lg:mt-[140px] py-10 md:px-1 md:mx-10">
+        <div className="adds flex flex-wrap gap-3 justify-evenly items-center">
+          {/* logo 1*/}
+          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
+            <Image src={"/logo1.png"} alt="logo1.png " fill />
+          </div>
+          {/* logo 2*/}
+          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
+            <Image src={"/logo2.png"} alt="logo2.png " fill />
+          </div>
+          {/* logo 3*/}
+          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
+            <Image src={"/logo3.png"} alt="logo3.png " fill />
+          </div>
+          {/* logo 4*/}
+          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
+            <Image src={"/logo4.png"} alt="logo4.png " fill />
+          </div>
+          {/* logo 5*/}
+          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
+            <Image src={"/logo5.png"} alt="logo5.png " fill />
+          </div>
+        </div>
+      </div>
+
     </main>
   );
 }
