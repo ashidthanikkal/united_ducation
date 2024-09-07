@@ -403,17 +403,17 @@ export default function Home() {
 
         {/* statistic content */}
         <div className="statistics relative top-[10px] md:top-[30px] lg:top-[40px] ">
-          <div className="parent flex items-baseline md:items-center justify-between md:mx-10 mx-5">
+          <div className="parent text-[#FFFFFF] flex items-baseline md:items-center justify-between md:mx-10 mx-5">
             <div className="child1 w-[40%]">
               <div className="flex  md:flex-row-reverse items-center md:justify-end gap-[10px]">
-                <div className="w-6 border-t-2 border-[#000000] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
+                <div className="w-6 border-t-2 border-[#ffffff] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
                 <div>
-                  <p className="font-normal text-[8px] leading-[8px] md:leading-[12px]  lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#000000]">
+                  <p className="font-normal text-[8px] leading-[8px] md:leading-[12px]  lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#ffffff]">
                     STATISTICS
                   </p>
                 </div>
               </div>
-              <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+              <h1 className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
                 Our Main Statistics
               </h1>
             </div>
@@ -430,21 +430,21 @@ export default function Home() {
 
         {/* counts */}
 
-        <div className="counts  relative top-[30px] md:top-[80px] lg:top-[110px] grid grid-cols-4 mx-2 md:mx-10">
-        <div className="text-center">
-          <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">650+</h1>
+        <div className="counts text-[#ffffff] relative top-[30px] md:top-[80px] lg:top-[110px] grid grid-cols-4 mx-2 md:mx-10">
+        <div className="text-center ">
+          <h1 className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">650+</h1>
           <p className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Project Completed</p>
         </div>
         <div className="text-center border-l border-l-[#049CB3]">
-          <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">200+</h1>
+          <h1 className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">200+</h1>
           <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Team Engineers</p>
         </div>
         <div className="text-center  border-l border-l-[#049CB3]">
-          <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">300+</h1>
+          <h1 className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">300+</h1>
           <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Clients Worldwide</p>
         </div>
         <div className="text-center  border-l border-l-[#049CB3]">
-          <h1 className="text-[#000000] font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">10+</h1>
+          <h1 className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">10+</h1>
           <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Years of Experiences</p>
         </div>
       </div>
