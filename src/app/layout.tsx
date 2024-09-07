@@ -10,21 +10,21 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 
 // const inter = Inter({ subsets: ["latin"] });
 
-import { Manrope, Plus_Jakarta_Sans} from 'next/font/google'
- 
+import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
+
 const manrope = Manrope({
-  subsets: ['latin'],
-  variable: '--font-manrope',
-  display: 'swap',
-  preload:false
-})
- 
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+  preload: false,
+});
+
 const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  variable: '--font-plusJakartaSans',
-  display: 'swap',
-  preload:false
-})
+  subsets: ["latin"],
+  variable: "--font-plusJakartaSans",
+  display: "swap",
+  preload: false,
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -37,19 +37,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${plusJakartaSans.variable}`}>
-      <body >
-        <nav className="bg-white  border-gray-200 dark:border-gray-700 px-2 md:h-[85px] h-[65px] shadow">
-          <div className="container flex flex-wrap justify-between items-center mx-auto py-3 ">
+    <html
+      lang="en"
+      className={`${manrope.variable} ${plusJakartaSans.variable}`}
+    >
+      <body>
+        <nav className="bg-white w-full  border-gray-200 px-10 h-[60px] md:h-[65px]  shadow">
+          <div className="container flex justify-between items-center  w-full pt-3 ">
             <Link href="/" className="flex items-center">
-              <span className="flex self-center text-xs font-semibold whitespace-nowrap dark:text-white ">
-                <Image
-                  src="/united-education-logo 1.png"
-                  alt="united-education-logo 1"
-                  width={72}
-                  height={48}
-                  className="p-3"
-                />{" "}
+              <span className="flex self-center text-xs font-semibold whitespace-nowrap">
+                <div className="relative h-[28px] w-[32px]">
+                  <Image
+                    src="/united-education-logo 1.png"
+                    alt="united-education-logo 1"
+                    fill
+                  />{" "}
+                </div>
               </span>
             </Link>
             <div className="hidden   lg:inline">

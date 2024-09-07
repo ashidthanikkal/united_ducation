@@ -3,34 +3,36 @@ import { IoIosArrowForward, IoIosArrowRoundForward } from "react-icons/io";
 
 export default function Home() {
   return (
-    <main>
+    <main className="lg:w-screen">
       {/* banner img */}
       <div className="flex flex-col items-center justify-between w-100 static">
-        <Image
-          src={"/Rectangle 2.png"}
-          alt="BannerImg"
-          height={500}
-          width={2560}
-        />
+        <div>
+          <Image
+            src={"/Rectangle 2.png"}
+            alt="BannerImg"
+            height={500}
+            width={2560}
+          />
+        </div>{" "}
         <h1 className="absolute font-bold  lg:top-[200px] top-[90px] lg:text-4xl text-xl md:top-[160px]   text-white">
           About Us
         </h1>
       </div>
 
       {/* company_overview */}
-      <div className="company_overview  p-10 flex flex-col md:flex-row">
+      <div className="company_overview  px-10 mt-5 md:my-12 flex flex-col md:flex-row">
         <div className="overview1 w-full md:flex-col flex-row">
           <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
-            <div className="w-10 border-t-2 border-[#DC272F] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
+            <div className="w-10 border-t-2 border-[#DC272F] flex justify-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
             <div>
-              <p className="font-normal text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]">
+              <p className="font-normal text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]">
                 COMPANY OVERVIEW
               </p>
             </div>
           </div>
 
           <div className="flex md:flex-col flex-row justify-between">
-            <h1 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+            <h1 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px] ">
               Our Real Commitment Reaches Beyond Gas & Oil Company.
             </h1>
             <button
@@ -47,14 +49,14 @@ export default function Home() {
         </div>
 
         <div className="overview2 w-full ">
-          <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-[#DC272F] mt-2 text-left">
+          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-[#DC272F] mt-2 text-left">
             UE is a private educational and training services provider,
             following huge educational and skill needs among our people that
             make it difficult for the country and nation to develop and cope
             with the rest of the world.
           </p>
 
-          <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 text-left">
+          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 text-left">
             UE is specialized in educational and training services, ranging from
             language education, business skills development, and special
             technical and vocational training services.
@@ -65,7 +67,7 @@ export default function Home() {
             </span>
           </p>
 
-          <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 hidden md:block">
+          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 hidden md:block">
             United Education has partnership with the world’s best educational
             services providers, accreditation and certification bodies and
             provide the best of services to our customers throughout Iraq and
@@ -77,11 +79,11 @@ export default function Home() {
       </div>
 
       {/* box */}
-      <div className="box_parent grid lg:grid-cols-3 grid-cols-1  lg:gap-0.5  gap-[10px] my-10 px-10">
+      <div className="box_parent grid lg:grid-cols-3 grid-cols-1  lg:gap-0.5  gap-[10px] mt-5 lg:my-10 px-10">
         {/* box1 */}
         <div className="box1 font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg rounded-s-lg  lg:rounded-none lg:rounded-s-lg bg-[#14516A]">
           <div className="md:ms-5 md:mt-10">
-            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-5">
+            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-[10px]">
               <div className="icon1 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
                 <Image src={"/icon1.png"} alt="icon1" fill />
               </div>
@@ -92,7 +94,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[269px]">
+              <p className="font-normal text-[10px] md:text-[16px] mx-5 mt-1 lg:w-[269px]">
                 We always deliver the best quality and performance for both our
                 products and services.
               </p>
@@ -102,7 +104,7 @@ export default function Home() {
         {/* box2 */}
         <div className="box2  font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg lg:rounded-none bg-[#14516A]">
           <div className="md:ms-5 md:mt-10">
-            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-5">
+            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-[10px]">
               <div className="icon2 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
                 <Image src={"/icon2.png"} alt="icon2" fill />
               </div>
@@ -113,7 +115,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[335px]">
+              <p className="font-normal text-[10px] md:text-[16px] mx-5 mt-1 lg:w-[335px]">
                 We can tailor our courses to your needs and create unique
                 programmes that may include various workshops and simulations.
               </p>
@@ -124,7 +126,7 @@ export default function Home() {
         {/* box3 */}
         <div className="box3  font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-e-lg rounded-lg  lg:rounded-none  lg:rounded-e-lg bg-[#14516A]">
           <div className="md:ms-5 md:mt-10">
-            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-5">
+            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-[10px]">
               <div className="icon3 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
                 <Image src={"/Icon 3.png"} alt="icon3" fill />
               </div>
@@ -135,7 +137,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="font-normal text-[8px] md:text-[16px] mt-2 mx-5 lg:w-[269px]">
+              <p className="font-normal text-[10px] md:text-[16px] mt-1  mx-5 lg:w-[269px]">
                 Exploiting global efficiencies in the delivery of our products
                 and services.
               </p>
@@ -145,7 +147,7 @@ export default function Home() {
       </div>
 
       {/* about us */}
-      <div className="aboutus px-10">
+      <div className="aboutus px-10 mt-5 md:my-10">
         <div className="aboutus_parent flex-col-reverse flex md:flex-row ">
           <div className="aboutus_child1 md:w-1/2 w-full grid grid-rows-2 grid-flow-col gap-3 my-5">
             <div className="relative h-[92px] md:h-full  rounded-xl">
@@ -163,16 +165,16 @@ export default function Home() {
             <div className="about_overview  sm:p-[.25rem] md:p-10">
               <div className="overview1 w-full md:flex-col flex-row">
                 <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
-                  <div className="w-10 border-t-2 border-[#DC272F] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
+                  <div className="w-10 border-t-2 border-[#DC272F] flex justify-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
                   <div>
-                    <p className="font-normal text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]">
+                    <p className="font-normal text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]">
                       ABOUT US
                     </p>
                   </div>
                 </div>
 
                 <div className="flex md:flex-col flex-row justify-between">
-                  <h1 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                  <h1 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px] ">
                     Our Real Commitment Reaches Beyond Gas & Oil Company.
                   </h1>
                   <div>
@@ -183,14 +185,14 @@ export default function Home() {
               </div>
 
               <div className="overview2 w-full ">
-                <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-[#DC272F] mt-2 text-left">
+                <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-[#DC272F] mt-2 text-left">
                   UE is a private educational and training services provider,
                   following huge educational and skill needs among our people
                   that make it difficult for the country and nation to develop
                   and cope with the rest of the world.
                 </p>
 
-                <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 text-left">
+                <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 text-left">
                   UE is specialized in educational and training services,
                   ranging from language education, business skills development,
                   and special technical and vocational training services.
@@ -215,32 +217,32 @@ export default function Home() {
       </div>
 
       {/* mission and vision */}
-      <div className="mission_vison h-[409px] bg-[#14516A] md:h-[482px] lg:h-[867px] lg:bg-[#F8F8F8]">
+      <div className="mission_vison h-[450px] bg-[#14516A] md:h-[482px] lg:h-[800px] lg:bg-[#F8F8F8]">
         <div className=" md:flex-row flex-col-reverse flex lg:flex-row px-10 md:pt-10">
           <div className="mission_visonchild1 w-full md:w-1/2">
             <div className="sm:p-[.25rem] md:p-[1.5rem]">
               <div className="w-full md:flex-col flex-row">
                 <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
-                  <div className="w-10 border-t-2 border-white lg:border-[#DC272F] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
+                  <div className="w-10 border-t-2 border-white lg:border-[#DC272F] flex justify-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
                   <div>
-                    <p className="font-normal text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-white lg:text-[#DC272F]">
+                    <p className="font-normal text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-white lg:text-[#DC272F]">
                       Our Mission & Vision
                     </p>
                   </div>
                 </div>
 
                 <div className="vision_sub lg:mt-14">
-                  <h1 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                  <h1 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px] ">
                     Our Vision
                   </h1>
                 </div>
 
                 <div className=" w-full ">
-                  <p className="font-semibold text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
+                  <p className="font-semibold text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
                     UNITED EDUCAION
                   </p>
 
-                  <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
+                  <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
                     Our vision is having a trained, knowledgeable and skillful
                     future generation in our country who can guarantee a better
                     life for themselves and the whole nation by been powerful
@@ -249,17 +251,17 @@ export default function Home() {
                 </div>
 
                 <div className="mission_sub lg:mt-14">
-                  <h1 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                  <h1 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px] ">
                     Our Mission
                   </h1>
                 </div>
 
                 <div className="overview2 w-full ">
-                  <p className="font-semibold text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
+                  <p className="font-semibold text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
                     UNITED EDUCAION
                   </p>
 
-                  <p className="font-normal text-[8px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
+                  <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
                     Our vision is having a trained, knowledgeable and skillful
                     future generation in our country who can guarantee a better
                     life for themselves and the whole nation by been powerful
@@ -277,7 +279,7 @@ export default function Home() {
                   src={"/Rectangle72.png"}
                   alt="Rectangle14"
                   fill
-                  className="object-cover "
+                  className="object-fit "
                 />
               </div>
               <div className="relative lg:col-span-4  h-[150px] hidden lg:inline rounded-xl">
@@ -296,11 +298,11 @@ export default function Home() {
         <div className="flex items-center justify-between lg:justify-center">
           <div>
             <div className="flex gap-2 lg:justify-center">
-              <div className="w-10 border-t-2 border-[#DC272F] flex justify-center items-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
+              <div className="w-10 border-t-2 border-[#DC272F] flex justify-center items-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
               <p>LATEST NEWS</p>
-              <div className="w-10 border-t-2   border-[#DC272F] lg:flex hidden justify-center items-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
+              <div className="w-10 border-t-2   border-[#DC272F] lg:flex hidden justify-center items-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
             </div>
-            <h1 className="text-[#04374B] text-start lg:text-center mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[22px] lg:leading-[52px] lg:text-[40px] ">
+            <h1 className="text-[#04374B] text-start lg:text-center mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[22px] lg:leading-[52px] lg:text-[36px] ">
               Our Latest blog
             </h1>
           </div>
@@ -308,22 +310,23 @@ export default function Home() {
             <IoIosArrowForward />
           </div>
         </div>
-        <div className="grid grid-cols-3 my-10 gap-4  overflow-x-scroll md:overflow-hidden">
+        {/* blog cards */}
+        <div className="grid grid-cols-3 my-10 gap-4 ">
           <div className="card1">
             <div className="relative h-[145px] md:h-[211px] lg:h-[336px] rounded-xl">
               <Image src={"/Rectangle129.png"} alt="Rectangle129" fill />
             </div>
             <div className="discripton1">
-              <h1 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+              <h1 className="my-2.5 text-[10px] font-medium md:text-[16px]  lg:text-[22px] md:font-normal ">
                 Drilling and well control simulator.
               </h1>
-              <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
+              <p className="text-[#04374B] font-normal text-[10px] md:text-[12px] lg:text-[16px]">
                 With a team of skilled therapists, we can accommodate requests
                 at short notice and maintain.
               </p>
               <div className="flex justify-start gap-3 text-[#DC272F] mt-1">
                 <a
-                  className="font-normal text-[8px] md:text-[12px] lg:text-[16px]"
+                  className="font-normal text-[10px] md:text-[12px] lg:text-[16px]"
                   href="/"
                 >
                   <u>ReadMore</u>
@@ -339,16 +342,16 @@ export default function Home() {
               <Image src={"/Rectangle130.png"} alt="Rectangle130" fill />
             </div>
             <div className="discripton2">
-              <h1 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+              <h1 className="my-2.5 text-[10px] font-medium md:text-[16px]  lg:text-[22px] md:font-normal ">
                 Gaming technology inspires.
               </h1>
-              <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
+              <p className="text-[#04374B] font-normal text-[10px] md:text-[12px] lg:text-[16px]">
                 With a team of skilled therapists, we can accommodate requests
                 at short notice and maintain.
               </p>
               <div className="mt-1 flex justify-start gap-3 text-[#DC272F]">
                 <a
-                  className="font-normal text-[8px] md:text-[12px] lg:text-[16px]"
+                  className="font-normal text-[10px] md:text-[12px] lg:text-[16px]"
                   href="/"
                 >
                   <u>ReadMore</u>
@@ -364,16 +367,16 @@ export default function Home() {
               <Image src={"/Rectangle131.png"} alt="Rectangle131" fill />
             </div>
             <div className="discripton3">
-              <h1 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+              <h1 className="my-2.5 text-[10px] font-medium md:text-[16px]  lg:text-[22px] md:font-normal ">
                 DrillSIM:20 simulator now available.
               </h1>
-              <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
+              <p className="text-[#04374B] font-normal text-[10px] md:text-[12px] lg:text-[16px]">
                 With a team of skilled therapists, we can accommodate requests
                 at short notice and maintain.
               </p>
               <div className="mt-1 flex justify-start gap-3 text-[#DC272F]">
                 <a
-                  className="font-normal text-[8px] md:text-[12px] lg:text-[16px]"
+                  className="font-normal text-[10px] md:text-[12px] lg:text-[16px]"
                   href="/"
                 >
                   <u>ReadMore</u>
@@ -393,6 +396,12 @@ export default function Home() {
             Alternative
           </button>
         </div>
+        
+        <div className="md:hidden">
+        <div className="w-10 border-t-2 border-[#14516A] flex justify-center items-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
+
+          <hr />
+        </div>
       </div>
 
       {/*our statistics  */}
@@ -406,20 +415,20 @@ export default function Home() {
           <div className="parent text-[#FFFFFF] flex items-baseline md:items-center justify-between md:mx-10 mx-5">
             <div className="child1 w-[40%]">
               <div className="flex  md:flex-row-reverse items-center md:justify-end gap-[10px]">
-                <div className="w-6 border-t-2 border-[#ffffff] flex justify-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
+                <div className="w-6 border-t-2 border-[#ffffff] flex justify-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
                 <div>
-                  <p className="font-normal text-[8px] leading-[8px] md:leading-[12px]  lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#ffffff]">
+                  <p className="font-normal text-[10px] leading-[8px] md:leading-[12px]  lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#ffffff]">
                     STATISTICS
                   </p>
                 </div>
               </div>
-              <h1 className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+              <h1 className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px]">
                 Our Main Statistics
               </h1>
             </div>
 
             <div className="child2 w-[60%]">
-              <p className="font-normal text-right text-[8px] md:text-[12px] lg:text-[18px]">
+              <p className="font-normal text-right text-[10px] md:text-[12px] lg:text-[18px]">
                 UE is specialized in educational and training services, ranging
                 from language education, business skills development, and
                 special technical and vocational training services.
@@ -432,34 +441,34 @@ export default function Home() {
 
         <div className="counts text-[#ffffff] relative top-[30px] md:top-[80px] lg:top-[110px] grid grid-cols-4 mx-2 md:mx-10">
           <div className="text-center ">
-            <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+            <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
               650+
             </p>
-            <h1 className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">
+            <h1 className="font-normal text-[10px] md:text-[12px] lg:text-[18px]">
               Project Completed
             </h1>
           </div>
           <div className="text-center border-l border-l-[#049CB3]">
-            <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+            <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
               200+
             </p>
-            <h1 className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">
+            <h1 className="font-normal text-[10px] md:text-[12px] lg:text-[18px]">
               Team Engineers
             </h1>
           </div>
           <div className="text-center  border-l border-l-[#049CB3]">
-            <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+            <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
               300+
             </p>
-            <h1 className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">
+            <h1 className="font-normal text-[10px] md:text-[12px] lg:text-[18px]">
               Clients Worldwide
             </h1>
           </div>
           <div className="text-center  border-l border-l-[#049CB3]">
-            <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+            <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
               10+
             </p>
-            <h1 className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">
+            <h1 className="font-normal text-[10px] md:text-[12px] lg:text-[18px]">
               Years of Experiences
             </h1>
           </div>
