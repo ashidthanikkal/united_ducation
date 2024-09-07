@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +8,23 @@ import { IoCallOutline } from "react-icons/io5";
 import { GrLocation } from "react-icons/gr";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+
+import { Manrope, Plus_Jakarta_Sans} from 'next/font/google'
+ 
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+  display: 'swap',
+  preload:false
+})
+ 
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-plusJakartaSans',
+  display: 'swap',
+  preload:false
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${manrope.variable} ${plusJakartaSans.variable}`}>
+      <body >
         <nav className="bg-white  border-gray-200 dark:border-gray-700 px-2 md:h-[85px] h-[65px] shadow">
           <div className="container flex flex-wrap justify-between items-center mx-auto py-3 ">
             <Link href="/" className="flex items-center">
@@ -43,7 +59,7 @@ export default function RootLayout({
                     <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
                       <FiMail className="mt-1 text-red-600" />
                       <div className="flex-col">
-                        <span className="block text-red-600">Email</span>
+                        <h1 className="block text-red-600">Email</h1>
                         <span className="font-light">
                           info@united-education.com
                         </span>
@@ -56,7 +72,7 @@ export default function RootLayout({
                     <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                       <IoCallOutline className="mt-1 text-red-600" />
                       <div className="flex-col">
-                        <span className="block text-red-600">call Us</span>
+                        <h1 className="block text-red-600">call Us</h1>
                         <span className="font-light">+964 7517627727</span>
                       </div>
                     </span>
@@ -67,7 +83,7 @@ export default function RootLayout({
                     <span className="align-baseline flex justify-center gap-2 py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                       <GrLocation className="mt-1 text-red-600" />
                       <div className="flex-col">
-                        <span className="block text-red-600">Location</span>
+                        <h1 className="block text-red-600">Location</h1>
                         <span className="font-light">
                           Erbil,Empire Business Tower,Tower 4,Floor 15, Office
                           NO 1
@@ -109,11 +125,10 @@ export default function RootLayout({
         {/* footer */}
 
         <footer className=" w-full bg-[#022837]">
-
           <div className="parent container justify-evenly flex flex-col w-full lg:flex-row  md:text-left  text-center  mx-auto p-10 ">
             {/* child 1 */}
             <div className="fchild_1 flex flex-col lg:flex-col md:flex-row  md:justify-between w-full lg:w-72  items-center md:items-start   text-white ">
-             <div className="">
+              <div className="">
                 <Image
                   src="/sticky-logo 1.png"
                   alt="united-education-logo 1"
@@ -121,9 +136,11 @@ export default function RootLayout({
                   height={60}
                   className="p-3"
                 />{" "}
-             </div>
+              </div>
               <div className="w-[267px] lg:mt-[30px]">
-                <span className="text-[18px] font-normal ">Sign up for releases & product updates...</span>
+                <h1 className="text-[18px] font-normal ">
+                  Sign up for releases & product updates...
+                </h1>
                 <form className="w-full max-w-xs">
                   <div className="flex items-center border-b border-[#CFCFCF] py-2">
                     <input
@@ -145,7 +162,7 @@ export default function RootLayout({
 
             <div className="fchild_2 mt-5 flex flex-col md:flex-row flex-wrap lg:gap-[63px] gap-0  justify-center text-center md:text-left md:justify-around">
               <div className="about">
-                <h2 className="text-white">About</h2>
+                <h1 className="text-white">About</h1>
                 <ul className="text-[#CFCFCF] lg:text-lg  text-sm">
                   <li>Our Story</li>
                   <li>Treatments Safer</li>
@@ -153,9 +170,8 @@ export default function RootLayout({
                   <li>Candles</li>
                 </ul>
               </div>{" "}
-
               <div className="about">
-                <h2 className="text-white">Company</h2>
+                <h1 className="text-white">Company</h1>
                 <ul className="text-[#CFCFCF] md:block hidden lg:text-lg text-sm">
                   <li>About</li>
                   <li>Contact</li>
@@ -163,9 +179,8 @@ export default function RootLayout({
                   <li>Privacy</li>
                 </ul>
               </div>{" "}
-
               <div className="about">
-                <h2 className="text-white">Help</h2>
+                <h1 className="text-white">Help</h1>
                 <ul className="text-[#CFCFCF] md:block hidden lg:text-lg text-sm">
                   <li>FAQs</li>
                   <li>Terms of service</li>
@@ -173,16 +188,14 @@ export default function RootLayout({
                   <li>Privacy</li>
                 </ul>
               </div>{" "}
-
               <div className="about">
-                <h2 className="text-white">SocialMedia</h2>
+                <h1 className="text-white">SocialMedia</h1>
                 <ul className="text-[#CFCFCF] md:block hidden lg:text-lg text-sm">
                   <li>Facebook</li>
                   <li>Instagram</li>
                   <li>Linkedin</li>
                 </ul>
               </div>{" "}
-
             </div>
           </div>
         </footer>

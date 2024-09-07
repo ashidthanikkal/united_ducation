@@ -12,9 +12,9 @@ export default function Home() {
           height={500}
           width={2560}
         />
-        <span className="absolute font-bold  lg:top-[200px] top-[90px] lg:text-4xl text-xl md:top-[160px]   text-white">
+        <h1 className="absolute font-bold  lg:top-[200px] top-[90px] lg:text-4xl text-xl md:top-[160px]   text-white">
           About Us
-        </span>
+        </h1>
       </div>
 
       {/* company_overview */}
@@ -30,9 +30,9 @@ export default function Home() {
           </div>
 
           <div className="flex md:flex-col flex-row justify-between">
-            <h2 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+            <h1 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
               Our Real Commitment Reaches Beyond Gas & Oil Company.
-            </h2>
+            </h1>
             <button
               type="button"
               className="text-white bg-[#14516A] hover:bg-[#14516A] w-48 mt-7 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 hidden md:block"
@@ -172,9 +172,9 @@ export default function Home() {
                 </div>
 
                 <div className="flex md:flex-col flex-row justify-between">
-                  <h2 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                  <h1 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
                     Our Real Commitment Reaches Beyond Gas & Oil Company.
-                  </h2>
+                  </h1>
                   <div>
                     {" "}
                     <IoIosArrowForward className="text-red-600 nd:w-10 md:hidden" />
@@ -230,9 +230,9 @@ export default function Home() {
                 </div>
 
                 <div className="vision_sub lg:mt-14">
-                  <h2 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                  <h1 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
                     Our Vision
-                  </h2>
+                  </h1>
                 </div>
 
                 <div className=" w-full ">
@@ -249,9 +249,9 @@ export default function Home() {
                 </div>
 
                 <div className="mission_sub lg:mt-14">
-                  <h2 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
+                  <h1 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px] ">
                     Our Mission
-                  </h2>
+                  </h1>
                 </div>
 
                 <div className="overview2 w-full ">
@@ -300,9 +300,9 @@ export default function Home() {
               <p>LATEST NEWS</p>
               <div className="w-10 border-t-2   border-[#DC272F] lg:flex hidden justify-center items-center text-[8px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
             </div>
-            <h2 className="text-[#04374B] text-start lg:text-center mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[22px] lg:leading-[52px] lg:text-[40px] ">
+            <h1 className="text-[#04374B] text-start lg:text-center mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[22px] lg:leading-[52px] lg:text-[40px] ">
               Our Latest blog
-            </h2>
+            </h1>
           </div>
           <div className="icon_arow text-red-600 lg:hidden">
             <IoIosArrowForward />
@@ -314,9 +314,9 @@ export default function Home() {
               <Image src={"/Rectangle129.png"} alt="Rectangle129" fill />
             </div>
             <div className="discripton1">
-              <h2 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+              <h1 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
                 Drilling and well control simulator.
-              </h2>
+              </h1>
               <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
                 With a team of skilled therapists, we can accommodate requests
                 at short notice and maintain.
@@ -339,9 +339,9 @@ export default function Home() {
               <Image src={"/Rectangle130.png"} alt="Rectangle130" fill />
             </div>
             <div className="discripton2">
-              <h2 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
-                Drilling and well control simulator.
-              </h2>
+              <h1 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+                Gaming technology inspires.
+              </h1>
               <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
                 With a team of skilled therapists, we can accommodate requests
                 at short notice and maintain.
@@ -364,9 +364,9 @@ export default function Home() {
               <Image src={"/Rectangle131.png"} alt="Rectangle131" fill />
             </div>
             <div className="discripton3">
-              <h2 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
-                Drilling and well control simulator.
-              </h2>
+              <h1 className="my-2.5 text-[8px] font-medium md:text-[16px]  lg:text-[24px] md:font-normal ">
+                DrillSIM:20 simulator now available.
+              </h1>
               <p className="text-[#04374B] font-normal text-[8px] md:text-[12px] lg:text-[16px]">
                 With a team of skilled therapists, we can accommodate requests
                 at short notice and maintain.
@@ -431,24 +431,39 @@ export default function Home() {
         {/* counts */}
 
         <div className="counts text-[#ffffff] relative top-[30px] md:top-[80px] lg:top-[110px] grid grid-cols-4 mx-2 md:mx-10">
-        <div className="text-center ">
-          <h1 className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">650+</h1>
-          <p className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Project Completed</p>
+          <div className="text-center ">
+            <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+              650+
+            </p>
+            <h1 className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">
+              Project Completed
+            </h1>
+          </div>
+          <div className="text-center border-l border-l-[#049CB3]">
+            <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+              200+
+            </p>
+            <h1 className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">
+              Team Engineers
+            </h1>
+          </div>
+          <div className="text-center  border-l border-l-[#049CB3]">
+            <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+              300+
+            </p>
+            <h1 className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">
+              Clients Worldwide
+            </h1>
+          </div>
+          <div className="text-center  border-l border-l-[#049CB3]">
+            <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">
+              10+
+            </p>
+            <h1 className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">
+              Years of Experiences
+            </h1>
+          </div>
         </div>
-        <div className="text-center border-l border-l-[#049CB3]">
-          <h1 className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">200+</h1>
-          <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Team Engineers</p>
-        </div>
-        <div className="text-center  border-l border-l-[#049CB3]">
-          <h1 className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">300+</h1>
-          <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Clients Worldwide</p>
-        </div>
-        <div className="text-center  border-l border-l-[#049CB3]">
-          <h1 className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[40px]">10+</h1>
-          <p  className="font-normal text-[8px] md:text-[12px] lg:text-[18px]">Years of Experiences</p>
-        </div>
-      </div>
-
 
         {/* contact us */}
         <div className="relative top-[16px] md:top-[100px] lg:top-[150px]  card flex-col md:flex-row flex m-10 md:px-20 ">
@@ -470,9 +485,9 @@ export default function Home() {
                 </p>
                 <div className="w-10 border-t-2   border-[#FAFAFA] lg:flex  justify-center items-center  text-[5px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]"></div>
               </div>
-              <h2 className="text-[#FAFAFA]  mt-3 font-normal md:font-semibold   text-[14px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px] ">
+              <h1 className="text-[#FAFAFA]  mt-3 font-normal md:font-semibold   text-[14px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px] ">
                 Keep in Touch
-              </h2>
+              </h1>
             </div>
 
             <div className="forms  md:mt-[10px]">
@@ -611,7 +626,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
     </main>
   );
 }
