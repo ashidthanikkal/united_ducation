@@ -612,7 +612,7 @@ export default function Home() {
       </div>
 
       {/* logo */}
-      <div className="mt-[410px] md:mt-[160px] lg:mt-[140px] py-10 md:px-1 md:mx-10">
+      <div className="mt-[378px] md:mt-[100px] lg:mt-[110px] py-10 md:px-1 md:mx-10">
         <div className="adds flex flex-wrap gap-3 justify-evenly items-center">
           {/* logo 1*/}
           <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
