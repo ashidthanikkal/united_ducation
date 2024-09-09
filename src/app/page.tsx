@@ -1,641 +1,929 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+
 import { IoIosArrowForward, IoIosArrowRoundForward } from "react-icons/io";
+import {
+  IoArrowBack,
+  IoArrowBackOutline,
+  IoArrowForward,
+} from "react-icons/io5";
 
 export default function Home() {
+  const imageurls = {
+    homepageSliderImage: "https://test.com",
+  };
   return (
-    <main>
-      {/* banner img */}
-      <div className="flex flex-col items-center justify-between w-100 static">
-        <div>
+    <main className="min-h-screen ">
+      <section className="relative w-full md:h-[650px] h-[500px]">
+        <div className="absolute inset-0 ">
           <Image
-            src={"/Rectangle 2.png"}
-            alt="BannerImg"
-            height={500}
-            width={2560}
+            src="/image/Rectangle5788.png"
+            layout="fill"
+          
+            alt="Picture of the author"
+            className=""
           />
-        </div>{" "}
-        <h1 className="absolute font-bold  lg:top-[200px] top-[90px] lg:text-4xl text-xl md:top-[160px]   text-white">
-          About Us
-        </h1>
-      </div>
-
-      {/* company_overview */}
-      <div className="company_overview  px-10 mt-5 md:my-12 flex flex-col md:flex-row">
-        <div className="overview1 w-full md:flex-col flex-row">
-          <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
-            <div className="w-10 border-t-2 border-[#DC272F] flex justify-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
-            <div>
-              <p className="font-normal text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]">
-                COMPANY OVERVIEW
-              </p>
+        </div>
+        <div className="relative flex h-full items-center justify-center  w-full ">
+          <div className="flex items-center  w-full">
+            <div className="lg:w-1/4 sm:w-1/6 w-1/12 text-white   flex md:ps-20 ps-6">
+              <IoArrowBackOutline className="lg:text-3xl text-xl" />
             </div>
-          </div>
 
-          <div className="flex md:flex-col flex-row justify-between">
-            <h1 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px] ">
-              Our Real Commitment Reaches Beyond Gas & Oil Company.
-            </h1>
-            <button
-              type="button"
-              className="text-white bg-[#14516A] hover:bg-[#14516A] w-48 mt-7 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 hidden md:block"
-            >
-              View Our Courses
-            </button>
-            <div>
-              {" "}
-              <IoIosArrowForward className="text-red-600 nd:w-10 md:hidden" />
+            <div className="text-center text-white flex-1  ">
+              <div className="flex items-center justify-center ">
+                <div className="md:w-10 w-16 md:border-t border-t-2 border-white"></div>
+
+                <span className={`lg:text-[18px] md:text-[12px] text-[10px] text-white font-normal mx-3  leading-[50px] `}>
+                  WELCOME TO UNITED EDUCATION
+                </span>
+
+                <div className="md:w-10 w-16 md:border-t border-t-2 border-white"></div>
+              </div>
+              <h2 className="lg:text-[40px] md:text-[27px] text-[22px] font-bold md:leading-[40px] lg:leading-[50px] ">
+                World Class Training Solutions for Professionals in the Oil and
+                Gas Industries
+              </h2>
+
+              <p className="lg:text-[18px] font-normal text-sm text-[#BDBDBE]  leading-[50px] ">
+                Learn how you can grow your knowledge and advance your career.
+              </p>
+              <button
+                type="button"
+                className="mx-auto text-white bg-[#DC272F] font-medium lg:text-lg md:text-base text-sm md:px-8 px-10 py-2 lg:px-6  lg:py-4 mt-3 mb-5 rounded-tr-lg rounded-b-lg"
+              >
+                Get Started
+              </button>
+            </div>
+
+            <div className="lg:w-1/4 sm:w-1/6 w-1/12 text-white   flex justify-end md:pe-20 pe-6">
+              <IoArrowForward className="lg:text-3xl text-xl" />
             </div>
           </div>
         </div>
 
-        <div className="overview2 w-full ">
-          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-[#DC272F] mt-2 text-left">
+        <div className="absolute md:w-4/5 w-4/5 lg:-bottom-40 md:-bottom-12 -bottom-[320px] left-1/2 transform -translate-x-1/2 ">
+          <div className="grid md:grid-cols-3  rounded-xl grid-cols-1 shadow-md bg-white md:px-0 sm:px-20 px-5  md:py-5 py-0">
+            <div className="md:flex block md:px-0  lg:py-5">
+              <div className=" md:px-10 md:py-0 py-4 flex flex-col">
+                <div className="relative w-6 h-6 md:w-8 md:h-8 items-center flex justify-center">
+                  <Image
+                    src="/image/icons/image65.png"
+                    fill
+                    unoptimized
+                    alt="Picture of the author"
+                    className="object-cover"
+                  />
+                </div>
+
+                <h5 className="lg:text-[20px] md:text-[16px] text-[14px] lg:leading-[55px] md:leading-[45px] leading-[35px]  font-semibold  text-[#04374B]">
+                  Quality Driven
+                </h5>
+                <p className=" lg:text-sm md:text-[9px] text-[12px] font-normal text-[#365F6F] lg:leading-6 md:leading-4">
+                  We always deliver the best quality and performance for both
+                  our products and services.
+                </p>
+              </div>
+              <div className=" md:border-r-2 border-b-2 border-[#CDCDCD] mx-2 md:mx-0 my-0  md:my-10"></div>
+            </div>
+
+            <div className="md:flex block md:px-0  lg:py-5">
+            <div className=" md:px-10 md:py-0 py-4 flex flex-col">
+            <div className="relative w-6 h-6 md:w-8 md:h-8 items-center flex justify-center">
+                  <Image
+                    src="/image/icons/image66.png"
+                    fill
+                    alt="Picture of the author"
+                    className="object-cover"
+                  />
+                </div>
+
+                <h5 className="    lg:text-[20px] md:text-[16px] text-[12px] lg:leading-[55px] md:leading-[45px] leading-[35px]  font-semibold  text-[#04374B]">
+                  Corporate Training
+                </h5>
+                <p className="lg:text-sm md:text-[9px] text-[12px] font-normal text-[#365F6F] lg:leading-6 leading-4">
+                  We can tailor our courses to your needs and create unique
+                  programmer that may include various workshops
+                </p>
+              </div>
+
+              <div className=" md:border-r-2 border-b-2 border-[#CDCDCD] mx-2 md:mx-0 my-0  md:my-10"></div>
+            </div>
+            <div className="md:flex block md:px-0  lg:py-5">
+            <div className=" md:px-10 md:py-0 py-4 flex flex-col">
+            <div className="relative w-6 h-6 md:w-8 md:h-8 items-center flex justify-center">
+                  <Image
+                    src="/image/icons/image67.png"
+                    fill
+                    alt="Picture of the author"
+                    className="object-cover"
+                  />
+                </div>
+
+                <h5 className="    lg:text-[20px] md:text-[16px] text-[12px] lg:leading-[55px] md:leading-[45px] leading-[35px]  font-semibold  text-[#04374B]">
+                  Global Sourcing
+                </h5>
+                <p className=" lg:text-sm md:text-[9px] text-[12px] font-normal text-[#365F6F] lg:leading-6 md:leading-4">
+                Exploiting global efficiencies in the delivery of our products and services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* course */}
+      <section className="lg:px-[80px] px-[34px] sm:px-[47px] md:mt-20  lg:mt-56 mt-96  mb-10">
+        <div className="flex items-center">
+          <div className="w-14 border-t-2 border-[#DC272F] "></div>
+
+          <p className="lg:text-lg text-sm  text-[#DC272F] ms-3">
+            OUR COURSE
+          </p>
+        </div>
+
+        <div className="flex items-end">
+          <h2 className="lg:w-1/2 md:w-1/3 w-3/5 text-lg  lg:text-[40px] lg:leading-[55px] md:text-2xl   font-semibold ">
+            We Offer Bunce of Training & Coaching Program!
+          </h2>
+          <div className="flex-1"></div>
+          <button
+            type="button"
+            className="focus:outline-none  text-white bg-[#DC272F] lg:block hidden   font-medium  text-sm px-5 py-3  rounded-tr-lg rounded-b-lg"
+          >
+           View all programs
+          </button>
+          <div className="text-[#DC272F] lg:hidden block ">
+            <span>
+              <IoIosArrowForward className="text-xl" />
+            </span>
+          </div>
+        </div>
+
+        <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-3  md:gap-3 mt-5">
+          <div className="relative px-2 py-3  ms-[28px] bg-white  rounded-lg border border-gray-300">
+            <div className="absolute -left-[28px] top-10  py-6 px-4  border-0   bg-[url('/image/Polygon.png')] bg-cover bg-center">
+              <div className="relative w-[20px] h-[20px]   ">
+                <Image
+                  src="/image/icons/Frame4.png"
+                  fill
+                  alt="Picture of the author"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            <div className="ml-5">
+              <h2 className="text-[18px] font-semibold text-[#04374B]">
+                CompEx Certification in Erbil, Iraq
+              </h2>
+              <p className="text-[#365F6F] text-sm  mt-1">
+                United Education has an excellent training facility
+                in Erbil (Kurdistan Region of Iraq) for professionals who would
+                like to achieve.
+              </p>
+              <a
+                href="#"
+                className="text-[#04374B] font-medium inline-flex items-center mt-3"
+              >
+                Learn More
+                <FaArrowRight className="ml-3 h-4 w-4" />
+              </a>
+            </div>
+          </div>
+          <div className="relative px-2 py-3  ms-[28px] bg-white  rounded-lg border border-gray-300">
+            <div className="absolute -left-[28px] top-10  py-6 px-4  border-0   bg-[url('/image/Polygon.png')] bg-cover bg-center">
+              <div className="relative w-[20px] h-[20px]   ">
+                <Image
+                  src="/image/icons/Frame.png"
+                  fill
+                  alt="Picture of the author"
+                  className=""
+                />
+              </div>
+            </div>
+
+            <div className="ml-5">
+            <h2 className="text-[18px] font-semibold text-[#04374B]">
+            Lifting Operations Courses
+              </h2>
+              <p className="text-[#365F6F] text-sm  mt-1">
+                These courses are suitable for anyone who is involved with
+                lifting operations. The course will provide participants with
+                the.
+              </p>
+              <a
+                href="#"
+                className="text-[#04374B] font-medium inline-flex items-center mt-3"
+              >
+                Learn More
+                <FaArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
+          </div>
+          <div className="relative px-2 py-3  ms-[28px] bg-white  rounded-lg border border-gray-300">
+            <div className="absolute -left-[28px] top-10  py-6 px-4  border-0   bg-[url('/image/Polygon.png')] bg-cover bg-center">
+              <div className="relative w-[20px] h-[20px]   ">
+                <Image
+                  src="/image/icons/Frame5.png"
+                  fill
+                  alt="Picture of the author"
+                  className=""
+                />
+              </div>
+            </div>
+
+            <div className="ml-5">
+            <h2 className="text-[18px] font-semibold text-[#04374B]">
+            Well Design and Engineering
+              </h2>
+              <p className="text-[#365F6F] text-sm  mt-1">
+                Well Design and Engineering integrates all major well design
+                technologies from pre-spud to TD. Participants are actively.
+              </p>
+              <a
+                href="#"
+                className="text-[#04374B] font-medium inline-flex items-center mt-3"
+              >
+                Learn More
+                <FaArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
+          </div>
+          <div className="relative px-2 py-3  ms-[28px] bg-white  rounded-lg border border-gray-300">
+            <div className="absolute -left-[28px] top-10  py-6 px-4  border-0   bg-[url('/image/Polygon.png')] bg-cover bg-center">
+              <div className="relative w-[20px] h-[20px]   ">
+                <Image
+                  src="/image/icons/Frame 6.png"
+                  fill
+                  alt="Picture of the author"
+                  className=""
+                />
+              </div>
+            </div>
+
+            <div className="ml-5">
+            <h2 className="text-[18px] font-semibold text-[#04374B]">
+            CompEx Certification in Erbil, Iraq
+              </h2>
+              <p className="text-[#365F6F] text-sm  mt-1">
+                United Education has an excellent training facility
+                in Erbil (Kurdistan Region of Iraq) for professionals who would
+                like to achieve.
+              </p>
+              <a
+                href="#"
+                className="text-[#04374B] font-medium inline-flex items-center mt-3"
+              >
+                Learn More
+                <FaArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
+          </div>
+          <div className="relative px-2 py-3 ms-[28px] bg-white  rounded-lg border border-gray-300">
+            <div className="absolute -left-[28px] top-10  py-6 px-4  border-0   bg-[url('/image/Polygon.png')] bg-cover bg-center">
+              <div className="relative w-[20px] h-[20px]   ">
+                <Image
+                  src="/image/icons/Frame7.png"
+                  fill
+                  alt="Picture of the author"
+                  className=""
+                />
+              </div>
+            </div>
+
+            <div className="ml-5">
+            <h2 className="text-[18px] font-semibold text-[#04374B]">
+            Lifting Operations Courses
+              </h2>
+              <p className="text-[#365F6F] text-sm mt-1">
+                These courses are suitable for anyone who is involved with
+                lifting operations. The course will provide participants with
+                the.
+              </p>
+              <a
+                href="#"
+                className="text-[#04374B] font-medium inline-flex items-center mt-3"
+              >
+                Learn More
+                <FaArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
+          </div>
+
+          <div className="relative px-2 py-3  ms-[28px] bg-white  rounded-lg border border-gray-300">
+            <div className="absolute -left-[28px] top-10  py-6 px-4  border-0   bg-[url('/image/Polygon.png')] bg-cover bg-center">
+              <div className="relative w-[20px] h-[20px]   ">
+                <Image
+                  src="/image/icons/Frame8.png"
+                  fill
+                  alt="Picture of the author"
+                  className=""
+                />
+              </div>
+            </div>
+
+            <div className="ml-5">
+            <h2 className="text-[18px] font-semibold text-[#04374B]">
+            Well Design and Engineering
+              </h2>
+              <p className="text-[#365F6F] text-sm mt-1">
+                Well Design and Engineering integrates all major well design
+                technologies from pre-spud to TD. Participants are actively.
+              </p>
+              <a
+                href="#"
+                className="text-[#04374B] font-medium inline-flex items-center mt-3"
+              >
+                Learn More
+                <FaArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* about */}
+      <section className="flex flex-col-reverse  lg:flex-row lg:justify-center lg:px-[80px] px-[34px] sm:px-[47px]">
+        <div className="grid grid-rows-2 grid-flow-col  gap-3 w-full lg:mt-0 mt-5 lg:w-2/4">
+          <div className="  lg:col-span-1  col-span-2  md:order-1 order-2">
+            <div className="relative  w-full lg:h-full h-48 ">
+              <Image
+                src="/image/Rectangle114.png"
+                layout="fill"
+                objectFit="cover"
+                alt="Picture of the author"
+                className="object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+          <div className="  lg:col-span-1  col-span-2  md:order-2 order-1">
+            <div className="relative  w-full h-full ">
+              <Image
+                src="/image/Rectangle115.png"
+                layout="fill"
+                objectFit="cover"
+                alt="Picture of the author"
+                className="object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+          <div className="row-span-2   md:order-3 order-3">
+            <div className="relative  w-full h-full ">
+              <Image
+                src="/image/Rectangle116.png"
+                layout="fill"
+                objectFit="cover"
+                alt="Picture of the author"
+                className="object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="lg:w-2/4 w-full lg:ms-5 ">
+          <div className="flex items-center">
+
+            <p className="lg:text-lg text-sm  text-[#DC272F] mr-3">ABOUT US</p>
+            <div className="w-14 border-t-2 border-[#DC272F] "></div>
+          </div>
+
+          <div className=" flex lg:block ">
+          <h1 className=" text-lg lg:text-[40px] lg:leading-[55px] md:text-2xl font-semibold text-[#04374B] ">
+              Our Real Commitment Reaches Beyond Gas & Oil Company.
+            </h1>
+            <div className="text-[#DC272F] lg:hidden   flex justify-end flex-1 ">
+              <span>
+                <IoIosArrowForward className="text-xl" />
+                
+              </span>
+            </div>
+          </div>
+
+          <p className="text-base mt-4 font-medium text-[#DC272F]">
             UE is a private educational and training services provider,
             following huge educational and skill needs among our people that
             make it difficult for the country and nation to develop and cope
             with the rest of the world.
           </p>
-
-          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 lg:mt-4 text-left">
+          <p className="mt-2 text-base font-normal text-[#365F6F]">
             UE is specialized in educational and training services, ranging from
             language education, business skills development, and special
             technical and vocational training services.
-            <span className="hidden md:inline">
-              We have a blend of products and services for all public, private,
-              non-governmental, educational and individual customers who are
-              looking for excellent educational solutions.
-            </span>
           </p>
-
-          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 lg:mt-4 hidden md:block">
-            United Education has partnership with the world’s best educational
-            services providers, accreditation and certification bodies and
-            provide the best of services to our customers throughout Iraq and
-            Kurdistan Region, combining world’s most advanced learning material
-            with up to date technologies and excellent services and support to
-            every customer.
-          </p>
-        </div>
-      </div>
-
-      {/* box */}
-      <div className="box_parent grid lg:grid-cols-3 grid-cols-1  lg:gap-0.5  gap-[10px] mt-5 lg:my-10 px-10">
-        {/* box1 */}
-        <div className="box1 font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg rounded-s-lg  lg:rounded-none lg:rounded-s-lg bg-[#14516A]">
-          <div className="md:ms-5 md:mt-10">
-            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-[10px]">
-              <div className="icon1 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
-                <Image src={"/icon1.png"} alt="icon1" fill />
-              </div>
-              <div className="sub_heading1">
-                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">
-                  Quality Driven
-                </span>
-              </div>
-            </div>
-            <div>
-              <p className="font-normal text-[10px] md:text-[16px] mx-5 mt-1 lg:w-[269px]">
-                We always deliver the best quality and performance for both our
-                products and services.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* box2 */}
-        <div className="box2  font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-lg lg:rounded-none bg-[#14516A]">
-          <div className="md:ms-5 md:mt-10">
-            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-[10px]">
-              <div className="icon2 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
-                <Image src={"/icon2.png"} alt="icon2" fill />
-              </div>
-              <div className="sub_heading1">
-                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">
-                  Corporate Training
-                </span>
-              </div>
-            </div>
-            <div>
-              <p className="font-normal text-[10px] md:text-[16px] mx-5 mt-1 lg:w-[335px]">
-                We can tailor our courses to your needs and create unique
-                programmes that may include various workshops and simulations.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* box3 */}
-        <div className="box3  font-medium text-white  h-[90px] md:h-[163px] lg:h-[300px] rounded-e-lg rounded-lg  lg:rounded-none  lg:rounded-e-lg bg-[#14516A]">
-          <div className="md:ms-5 md:mt-10">
-            <div className="flex lg:flex-col flex-row  item-center lg:w-72  ms-5 mt-[10px]">
-              <div className="icon3 relative w-[20px]  h-[20px] md:w-[40px] md:h-[40px] lg: lg:w-[56px] lg:h-[56px]">
-                <Image src={"/Icon 3.png"} alt="icon3" fill />
-              </div>
-              <div className="sub_heading1">
-                <span className="font-medium text-[12px] md:text-[22px] lg:text-[28px] ms-3 lg:ms-0">
-                  Global Sourcing
-                </span>
-              </div>
-            </div>
-            <div>
-              <p className="font-normal text-[10px] md:text-[16px] mt-1  mx-5 lg:w-[269px]">
-                Exploiting global efficiencies in the delivery of our products
-                and services.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* about us */}
-      <div className="aboutus px-10 mt-5 md:my-10">
-        <div className="aboutus_parent flex-col-reverse flex md:flex-row ">
-          <div className="aboutus_child1 md:w-1/2 w-full grid grid-rows-2 grid-flow-col gap-3 my-5">
-            <div className="relative h-[92px] md:h-full  rounded-xl">
-              <Image src={"/Rectangle14.png"} alt="Rectangle14" fill />
-            </div>
-            <div className="relative  h-[92px] md:h-full md: rounded-xl">
-              <Image src={"/Rectangle15.png"} alt="Rectangle15" fill />
-            </div>
-            <div className="relative h-full row-span-2 rounded-xl">
-              <Image src={"/Rectangle16.png"} alt="Rectangle16" fill />
-            </div>
-          </div>
-
-          <div className="aboutus_child2 md:w-1/2">
-            <div className="about_overview  sm:p-[.25rem] md:p-10">
-              <div className="overview1 w-full md:flex-col flex-row">
-                <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
-                  <div className="w-10 border-t-2 border-[#DC272F] flex justify-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
-                  <div>
-                    <p className="font-normal text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]">
-                      ABOUT US
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex md:flex-col flex-row justify-between">
-                  <h1 className="text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px] ">
-                    Our Real Commitment Reaches Beyond Gas & Oil Company.
-                  </h1>
-                  <div>
-                    {" "}
-                    <IoIosArrowForward className="text-red-600 nd:w-10 md:hidden" />
-                  </div>
-                </div>
-              </div>
-
-              <div className="overview2 w-full ">
-                <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-[#DC272F] mt-2 text-left">
-                  UE is a private educational and training services provider,
-                  following huge educational and skill needs among our people
-                  that make it difficult for the country and nation to develop
-                  and cope with the rest of the world.
-                </p>
-
-                <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 text-left">
-                  UE is specialized in educational and training services,
-                  ranging from language education, business skills development,
-                  and special technical and vocational training services.
-                  <span className="lg:hidden hidden md:inline">
-                    We have a blend of products and services for all public,
-                    private, non-governmental, educational and individual
-                    customers who are looking for excellent educational
-                    solutions.
-                  </span>
-                </p>
-
-                <button
-                  type="button"
-                  className="text-white bg-[#14516A] hover:bg-[#14516A] w-48 mt-7 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 hidden md:block"
-                >
-                  View Our Services
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* mission and vision */}
-      <div className="mission_vison h-[430px] bg-[#14516A] md:h-[500px] lg:h-[800px] lg:bg-[#F8F8F8]">
-        <div className=" md:flex-row flex-col-reverse flex lg:flex-row px-10 md:pt-10">
-          <div className="mission_visonchild1 w-full md:w-1/2">
-            <div className="sm:p-[.25rem] md:p-[1.5rem]">
-              <div className="w-full md:flex-col flex-row">
-                <div className="flex  md:flex-row-reverse items-center md:justify-end gap-4">
-                  <div className="w-10 border-t-2 border-white lg:border-[#DC272F] flex justify-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
-                  <div>
-                    <p className="font-normal text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-white lg:text-[#DC272F]">
-                      Our Mission & Vision
-                    </p>
-                  </div>
-                </div>
-
-                <div className="vision_sub lg:mt-14">
-                  <h1 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px] ">
-                    Our Vision
-                  </h1>
-                </div>
-
-                <div className=" w-full ">
-                  <p className="hidden lg:block font-semibold text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
-                    UNITED EDUCATION
-                  </p>
-
-                  <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
-                    Our vision is having a trained, knowledgeable and skillful
-                    future generation in our country who can guarantee a better
-                    life for themselves and the whole nation by been powerful
-                    producible human resources.
-                  </p>
-                </div>
-
-                <div className="mission_sub lg:mt-14">
-                  <h1 className="text-white lg:text-[#04374B] mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px] ">
-                    Our Mission
-                  </h1>
-                </div>
-
-                <div className="overview2 w-full ">
-                  <p className="hidden lg:block font-semibold text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
-                    UNITED EDUCATION
-                  </p>
-
-                  <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
-                    Our mission is to make professional, advanced education and
-                    training available for most governmental institutions,
-                    schools, universities, businesses and individuals throughout
-                    the country and equip them with tools to shape their future
-                    and reach their goals in the community and workplace.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mission_visonchild2 w-full md:w-1/2 ">
-            <div className="aboutus_child1  w-full grid lg:grid-rows-4 grid-flow-col gap-3 my-5">
-              <div className="relative lg:row-span-3 lg:col-span-6 h-[137px] md:h-[389px] lg:h-[510px]  rounded-xl">
-                <Image
-                  src={"/Rectangle72.png"}
-                  alt="Rectangle14"
-                  fill
-                  className="object-fit "
-                />
-              </div>
-              <div className="relative lg:col-span-4  h-[150px] hidden lg:inline rounded-xl">
-                <Image src={"/Rectangle73.png"} alt="Rectangle15" fill />
-              </div>
-              <div className="relative lg:col-span-2  h-[150px] hidden lg:inline rounded-xl">
-                <Image src={"/Rectangle74.png"} alt="Rectangle16" fill />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* our latest blog */}
-      <div className="my-10 mx-10">
-        <div className="flex items-center justify-between lg:justify-center">
-          <div>
-            <div className="flex gap-2 lg:justify-center">
-              <div className="w-10 border-t-2 border-[#DC272F] flex justify-center items-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
-              <p>LATEST NEWS</p>
-              <div className="w-10 border-t-2   border-[#DC272F] lg:flex hidden justify-center items-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
-            </div>
-            <h1 className="text-[#04374B] text-start lg:text-center mt-3 font-bold md:font-semibold  leading-[16.8px] text-[14px] md:leading-[16.8px] md:text-[22px] lg:leading-[52px] lg:text-[36px] ">
-              Our Latest blog
-            </h1>
-          </div>
-          <div className="icon_arow text-red-600 lg:hidden">
-            <IoIosArrowForward />
-          </div>
-        </div>
-        {/* blog cards */}
-        <div className="grid grid-cols-3 my-10 gap-4 ">
-          <div className="card1">
-            <div className="relative h-[145px] md:h-[211px] lg:h-[336px] rounded-xl">
-              <Image src={"/Rectangle129.png"} alt="Rectangle129" fill />
-            </div>
-            <div className="discripton1">
-              <h1 className="my-2.5 text-[10px] font-medium md:text-[16px]  lg:text-[22px] md:font-normal ">
-                Drilling and well control simulator.
-              </h1>
-              <p className="text-[#04374B] font-normal text-[10px] md:text-[12px] lg:text-[16px]">
-                With a team of skilled therapists, we can accommodate requests
-                at short notice and maintain.
-              </p>
-              <div className="flex justify-start gap-3 text-[#DC272F] mt-1">
-                <a
-                  className="font-normal text-[10px] md:text-[12px] lg:text-[16px]"
-                  href="/"
-                >
-                  <u>ReadMore</u>
-                </a>
-                <span className="font-normal text-[13px] md:text-[20px] lg:text-[25px]">
-                  <IoIosArrowRoundForward />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="card2">
-            <div className="relative  h-[145px] md:h-[211px] lg:h-[336px] rounded-xl">
-              <Image src={"/Rectangle130.png"} alt="Rectangle130" fill />
-            </div>
-            <div className="discripton2">
-              <h1 className="my-2.5 text-[10px] font-medium md:text-[16px]  lg:text-[22px] md:font-normal ">
-                Gaming technology inspires.
-              </h1>
-              <p className="text-[#04374B] font-normal text-[10px] md:text-[12px] lg:text-[16px]">
-                With a team of skilled therapists, we can accommodate requests
-                at short notice and maintain.
-              </p>
-              <div className="mt-1 flex justify-start gap-3 text-[#DC272F]">
-                <a
-                  className="font-normal text-[10px] md:text-[12px] lg:text-[16px]"
-                  href="/"
-                >
-                  <u>ReadMore</u>
-                </a>
-                <span className="font-normal text-[13px] md:text-[20px] lg:text-[25px]">
-                  <IoIosArrowRoundForward />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="card3">
-            <div className="relative h-[145px] md:h-[211px] lg:h-[336px] rounded-xl">
-              <Image src={"/Rectangle131.png"} alt="Rectangle131" fill />
-            </div>
-            <div className="discripton3">
-              <h1 className="my-2.5 text-[10px] font-medium md:text-[16px]  lg:text-[22px] md:font-normal ">
-                DrillSIM:20 simulator now available.
-              </h1>
-              <p className="text-[#04374B] font-normal text-[10px] md:text-[12px] lg:text-[16px]">
-                With a team of skilled therapists, we can accommodate requests
-                at short notice and maintain.
-              </p>
-              <div className="mt-1 flex justify-start gap-3 text-[#DC272F]">
-                <a
-                  className="font-normal text-[10px] md:text-[12px] lg:text-[16px]"
-                  href="/"
-                >
-                  <u>ReadMore</u>
-                </a>
-                <span className="font-normal text-[13px] md:text-[20px] lg:text-[25px]">
-                  <IoIosArrowRoundForward />
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="lg:block hidden lg:text-center">
           <button
             type="button"
-            className=" py-2.5 px-5 me-2 mb-2 text-sm font-medium text-[#14516A] focus:outline-none bg-white rounded-lg border border-[#14516A] hover:bg-gray-100  focus:z-10 focus:ring-4 focus:ring-gray-100"
+            className="focus:outline-none text-white bg-[#DC272F] lg:block hidden   font-medium  text-sm px-5 py-3 mt-5 rounded-tr-lg rounded-b-lg"
           >
-            Alternative
+            Learn More
           </button>
         </div>
+      </section>
 
-        <div className="md:hidden">
-          <div className="w-10 border-t-2 border-[#14516A] flex justify-center items-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
 
-          <hr />
+
+      {/* over all */}
+      <section className="bg-[url('/image/Rectangle5795.png')] bg-cover items-center h-64 mt-10 grid grid-cols-2 md:grid-cols-4">
+  <div className="text-center">
+    <p className="text-5xl text-white font-bold">650+</p>
+    <p className="text-sm mt-4 text-[#E6EBEB]">Project Completed</p>
+    <div className="w-full border-b-4 ms-10 mt-4 border-[#049CB3] md:hidden"></div>
+  </div>
+  <div className="text-center md:border-l-4 border-[#049CB3]">
+    <p className="text-5xl text-white font-bold">200+</p>
+    <p className="text-sm mt-4 text-[#E6EBEB]">Team Engineers</p>
+    <div className="w-[90%] border-b-4 me-20 mt-4 border-[#049CB3] md:hidden"></div>
+  </div>
+  <div className="text-center md:border-l-4 border-[#049CB3]">
+    <p className="text-5xl text-white font-bold">300+</p>
+    <p className="text-sm mt-4 text-[#E6EBEB]">Clients Worldwide</p>
+  </div>
+  <div className="text-center md:border-l-4 border-[#049CB3]">
+    <p className="text-5xl text-white font-bold">10+</p>
+    <p className="text-sm mt-4 text-[#E6EBEB]">Years Of Experiences</p>
+  </div>
+</section>
+
+
+      {/* our service */}
+      <section className="lg:px-[80px] px-[34px] sm:px-[47px] mt-10">
+        <div className="flex items-center">
+      
+          <div className="w-14 border-t-2 border-[#DC272F] "></div>
+
+          <p className="lg:text-lg text-sm  text-[#DC272F] ms-3">OUR SERVICES</p>
         </div>
-      </div>
+        
 
-      {/*our statistics  */}
-      <div className="relative h-[222px] md:h-[432px] lg:h-[700px] ">
-        <div className="inset-0 w-full absolute ">
-          <Image src={"/Rectangle132.png"} alt="Rectangle132.png " fill />
-        </div>
-
-        {/* statistic content */}
-        <div className="statistics relative top-[10px] md:top-[30px] lg:top-[40px] ">
-          <div className="parent text-[#FFFFFF] flex items-baseline md:items-center justify-between md:mx-10 mx-5">
-            <div className="child1 w-[40%]">
-              <div className="flex  md:flex-row-reverse items-center md:justify-end gap-[10px]">
-                <div className="w-6 border-t-2 border-[#ffffff] flex justify-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#DC272F]"></div>
-                <div>
-                  <p className="font-normal text-[10px] leading-[8px] md:leading-[12px]  lg:leading-[28.8px] lg:text-[18px] mt-2 text-[#ffffff]">
-                    STATISTICS
-                  </p>
-                </div>
-              </div>
-              <h1 className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[14px] lg:leading-[52px] lg:text-[36px]">
-                Our Main Statistics
-              </h1>
-            </div>
-
-            <div className="child2 w-[60%]">
-              <p className="font-normal text-right text-[6px] md:text-[12px] lg:text-[18px]">
-                UE is specialized in educational and training services, ranging
-                from language education, business skills development, and
-                special technical and vocational training services.
-              </p>
-            </div>
+<div className="flex items-end">
+          <h2 className="lg:w-1/2 md:w-1/3 w-3/5 text-lg  lg:text-[40px] lg:leading-[55px] md:text-2xl   font-semibold ">
+          We Provide Best Services
+          </h2>
+          <div className="flex-1"></div>
+          <button
+            type="button"
+            className="focus:outline-none  text-white bg-[#DC272F] lg:block hidden   font-medium  text-sm px-5 py-3  rounded-tr-lg rounded-b-lg"
+          >
+           Learn More
+          </button>
+          <div className="text-[#DC272F] lg:hidden block ">
+            <span>
+              <IoIosArrowForward className="text-xl" />
+            </span>
           </div>
         </div>
+        <div className="grid lg:grid-cols-4 gap-5 sm:grid-cols-3">
+          <div className=" px-6 bg-[#F7F7F7]   rounded-xl shadow my-5">
+            <div className="w-10 h-10 bg-[#04374B] items-center flex justify-center">
+              <Image
+                src="/image/icons/Frame.png"
+                width={28}
+                height={28}
+                alt="Picture of the author"
+                className=""
+              />
+            </div>
 
-        {/* counts */}
+            <h5 className="mb-2 mt-6 text-lg font-bold tracking-tight text-[#04374B] ">
+              Well Design Services
+            </h5>
 
-        <div className="counts text-[#ffffff] relative top-[30px] md:top-[80px] lg:top-[110px] grid grid-cols-4 mx-2 md:mx-10">
+            <p className="mb-3 text-sm font-normal text-[#365F6F] leading-6">
+              From applied literature to educational resources, we have a lot of
+              textbooks to offer.
+            </p>
+            <Link
+              href="#"
+              className="inline-flex items-center   py-2 text-sm font-medium text-center mb-8 "
+            >
+              Read more
+              <IoIosArrowRoundForward className="text-2xl ms-1" />
+            </Link>
+          </div>
+
+          <div className=" px-6 bg-[#F7F7F7]   rounded-xl shadow my-5">
+            <div className="w-10 h-10 bg-[#04374B] items-center flex justify-center">
+              <Image
+                src="/image/icons/Frame1.png"
+                width={28}
+                height={28}
+                alt="Picture of the author"
+                className=""
+              />
+            </div>
+
+            <h5 className="mb-2 mt-6 text-lg font-bold tracking-tight text-[#04374B] ">
+              Horizontal & Multilateral Technology
+            </h5>
+
+            <p className="mb-3 text-sm font-normal text-[#365F6F] leading-6">
+              From applied literature to educational resources, we have a lot of
+              textbooks to offer.
+            </p>
+
+            <Link
+              href="#"
+              className="inline-flex items-center  py-2 text-sm font-medium text-center mb-10 "
+            >
+              Read more
+              <IoIosArrowRoundForward className="text-2xl ms-1" />
+            </Link>
+          </div>
+          <div className=" px-6 bg-[#F7F7F7]   rounded-xl shadow my-5">
+            <div className="w-10 h-10 bg-[#04374B] items-center flex justify-center">
+              <Image
+                src="/image/icons/Frame2.png"
+                width={28}
+                height={28}
+                alt="Picture of the author"
+                className=""
+              />
+            </div>
+
+            <h5 className="mb-2 mt-6 text-lg font-bold tracking-tight text-[#04374B] ">
+              Preparation of Well Programmes
+            </h5>
+
+            <p className="mb-3 text-sm font-normal text-[#365F6F] leading-6">
+              From applied literature to educational resources, we have a lot of
+              textbooks to offer.
+            </p>
+
+            <Link
+              href="#"
+              className="inline-flex items-center  py-2 text-sm font-medium text-center mb-10 "
+            >
+              Read more
+              <IoIosArrowRoundForward className="text-2xl ms-1" />
+            </Link>
+          </div>
+          <div className=" px-6 bg-[#F7F7F7]   rounded-xl shadow my-5">
+            <div className="w-10 h-10 bg-[#04374B] items-center flex justify-center">
+              <Image
+                src="/image/icons/Frame3.png"
+                width={28}
+                height={28}
+                alt="Picture of the author"
+                className=""
+              />
+            </div>
+
+            <h5 className="mb-2 mt-6 text-lg font-bold tracking-tight text-[#04374B] ">
+              Data Mining
+            </h5>
+
+            <p className="mb-3 text-sm font-normal text-[#365F6F] leading-6">
+              From applied literature to educational resources, we have a lot of
+              textbooks to offer.
+            </p>
+
+            <Link
+              href="#"
+              className="inline-flex items-center  py-2 text-sm font-medium text-center mb-10"
+            >
+              Read more
+              <IoIosArrowRoundForward className="text-2xl ms-1" />
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* Our Mission & Vision */}
+      <section className="bg-[#14516A] gap-8 max-h-[835px] md:flex lg:px-[80px] px-[34px] sm:px-[47px] lg:py-[40px] py-[17px] sm:py-[24px] mt-10">
+        <div className="md:w-1/2 w-full">
+          <div className="flex items-center">
+           
+            <span className="text-sm text-white font-extralight me-3">
+              OUR MISSION & VISION
+            </span>
+            <div className="w-16 border-t-2 text-white"></div>
+          </div>
+          <div className="mt-5 text-white">
+            <h2 className="text-2xl">Our Vision </h2>
+            <h3 className="text-xl font-semibold mt-8 hidden lg:block">
+              UNITED EDUCATION
+            </h3>
+            <p className="font-extralight lg:text-lg md:text-sm text-[8px] lg:leading-7 leading-4 mt-2">
+              Our vision is having a trained, knowledgeable and skillful future
+              generation in our country who can guarantee a better life for
+              themselves and the whole nation by been powerful producible human
+              resources.
+            </p>
+            <h2 className="text-2xl mt-5">Our Mission</h2>
+            <h3 className="text-xl font-semibold mt-8 hidden lg:block">
+              UNITED EDUCATION
+            </h3>
+
+            <p className="font-extralight lg:text-lg md:text-sm text-[8px] lg:leading-7 mt-2">
+              Our mission is to make professional, advanced education and
+              training available for most governmental institutions, schools,
+              universities, businesses and individuals throughout the country
+              and equip them with tools to shape their future and reach their
+              goals in the community and workplace.
+            </p>
+          </div>
+        </div>
+        <div className="md:w-1/2 w-full items-end flex justify-end ">
+          <div className="relative lg:w-[530px] lg:h-[550px] md:w-[315px] md:h-[389px] w-full h-[200px] md:mt-0 mt-5">
+            <Image
+              src="/image/Rectangle72.png"
+              fill
+              alt="Picture of the author"
+              className=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="lg:px-[80px] px-[34px] sm:px-[47px] my-10 ">
+        <div className="flex lg:flex-col flex-row justify-between items-center" >
+        <div className="text-center">
+          <div className="flex justify-center items-center">
+            <div className="lg:w-10 border-t-2 border-[#DC272F] w-16 "></div>
+
+            <span className="text-lg text-[#DC272F] mx-3">LATEST NEWS</span>
+            <div className="w-10 border-t-2 border-[#DC272F] lg:block hidden "></div>
+          </div>
+
+          <h2 className="flex-1 lg:text-[40px] mt-2 text-xl font-semibold">
+            Our Latest Blogs
+          </h2>
+        </div>
+        <div className="text-[#DC272F] lg:hidden block ">
+            <span>
+              <IoIosArrowForward className="text-xl" />
+            </span>
+          </div>
+        </div>
+       
+
+        <div className="grid lg:grid-cols-3 gap-5 sm:grid-cols-3">
+          <div className="     rounded-xl  my-5">
+            <div className=" relative w-full h-64">
+              <Image
+                src="/image/Rectangle129.png"
+                fill
+                alt="Picture of the author"
+                className=""
+              />
+            </div>
+
+            <h5 className="mb-2 mt-6 text-lg font-bold tracking-tight text-black  ">
+              Drilling and well control simulator.
+            </h5>
+
+            <p className="mb-3 text-sm font-normal text-[#365F6F] leading-6">
+              From applied literature to educational resources, we have a lot of
+              textbooks to offer.
+            </p>
+            <Link
+              href="#"
+              className="inline-flex items-center  text-[#DC272F] py-2 text-sm font-medium text-center mb-10 "
+            >
+              Read more
+              <IoIosArrowRoundForward className="text-2xl ms-1" />
+            </Link>
+          </div>
+
+          <div className="rounded-xl  my-5">
+            <div className=" relative w-full h-64">
+              <Image
+                src="/image/Rectangle131.png"
+                fill
+                alt="Picture of the author"
+                className=""
+              />
+            </div>
+
+            <h5 className="mb-2 mt-6 text-lg font-bold tracking-tight text-black  ">
+              Gaming technology inspires.
+            </h5>
+
+            <p className="mb-3 text-sm font-normal text-[#365F6F] leading-6">
+              With a team of skilled therapists, we can accommodate requests at
+              short notice and maintain.
+            </p>
+            <Link
+              href="#"
+              className="inline-flex items-center  text-[#DC272F] py-2 text-sm font-medium text-center mb-10 "
+            >
+              Read more
+              <IoIosArrowRoundForward className="text-2xl ms-1" />
+            </Link>
+          </div>
+          <div className="     rounded-xl  my-5">
+            <div className=" relative w-full h-64">
+              <Image
+                src="/image/Rectangle130.png"
+                fill
+                alt="Picture of the author"
+                className=""
+              />
+            </div>
+
+            <h5 className="mb-2 mt-6 text-lg font-bold tracking-tight text-black  ">
+              DrillSIM:20 simulator now available.
+            </h5>
+
+            <p className="mb-3 text-sm font-normal text-[#365F6F] leading-6">
+              With a team of skilled therapists, we can accommodate requests at
+              short notice and maintain.
+            </p>
+            <Link
+              href="#"
+              className="inline-flex items-center  text-[#DC272F] py-2 text-sm font-medium text-center mb-10 "
+            >
+              Read more
+              <IoIosArrowRoundForward className="text-2xl ms-1" />
+            </Link>
+          </div>
+        </div>
+        <div className=" flex justify-center items-center">
+          <button
+            type="button"
+            className="focus:outline-none lg:block text-white bg-[#DC272F]  hidden   font-medium  text-sm px-5 py-2.5  rounded-tr-lg rounded-b-lg"
+          >
+            View All Blogs
+          </button>
+        </div>
+      </section>
+
+      <section className="lg:px-[80px] px-[34px] sm:px-[47px] mt-10 bg-[#FAFAFA] pt-10">
+        <div className="max-w-2xl mx-auto  p-8 bg-[#FAFAFA] rounded-md form-container">
           <div className="text-center ">
-            <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
-              650+
-            </p>
-            <h1 className="font-normal text-[7px] md:text-[10px] lg:text-[18px]">
-              Project Completed
-            </h1>
+            <h2 className="flex-1 lg:text-2xl text-xl text-[#04374B] font-semibold mb-4">
+              Get Free Consultation
+            </h2>
+            <span className="text-sm text-[#365F6F]  mx-6">
+              {" "}
+              We provide best health care for your family. We are giving the
+              best treatment services.
+            </span>
           </div>
-          <div className="text-center border-l border-l-[#049CB3]">
-            <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
-              200+
-            </p>
-            <h1 className="font-normal text-[7px] md:text-[12px] lg:text-[18px]">
-              Team Engineers
-            </h1>
-          </div>
-          <div className="text-center  border-l border-l-[#049CB3]">
-            <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
-              300+
-            </p>
-            <h1 className="font-normal text-[7px] md:text-[12px] lg:text-[18px]">
-              Clients Worldwide
-            </h1>
-          </div>
-          <div className="text-center  border-l border-l-[#049CB3]">
-            <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
-              10+
-            </p>
-            <h1 className="font-normal text-[7px] md:text-[12px] lg:text-[18px]">
-              Years of Experiences
-            </h1>
-          </div>
-        </div>
-
-        {/* contact us */}
-        <div className="relative top-[16px] md:top-[100px] lg:top-[150px]  card flex-col md:flex-row flex m-10 md:px-20 ">
-          {/* img div */}
-          <div className="relative md:w-1/3 h-[123px] md:h-[305px] lg:h-[450px] md:hidden block">
-            <Image src={"/Rectangle135.png"} alt="Rectangle132" fill />
-          </div>
-          <div className="relative md:w-1/3 h-[123px] md:h-[305px] lg:h-[450px] md:block hidden">
-            <Image src={"/Rectangle135(1).png"} alt="Rectangle132" fill />
-          </div>
-
-          {/* form div */}
-          <div className="z-50 md:w-2/3 bg-[#022837] h-[360px] md:h-[305px] lg:h-[450px] md:rounded-r-[20px] md:rounded-bl-none rounded-b-[20px] lg:p-10">
-            <div className="mt-5 md:ms-10 flex flex-col justify-center items-center md:justify-center md:items-start">
-              <div className="flex gap-2 items-center">
-                <div className="w-10 border-t-2 border-[#FAFAFA] flex md:hidden justify-center items-center text-[2px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]"></div>
-                <p className="text-[#FAFAFA] leading-[2px] text-[10px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px] ">
-                  CONTACT US
-                </p>
-                <div className="w-10 border-t-2   border-[#FAFAFA] lg:flex  justify-center items-center  text-[5px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]"></div>
+          <form action="" className="mt-5 font-extralight">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4 text-xs font-light">
+              <div className="">
+                <label
+                  htmlFor="name"
+                  className="block text-[#04374B] text-sm  mb-2 "
+                >
+                  First Name*
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                  className="w-full px-3  border rounded-md bg-[#F6F0F0] p-4 focus:outline-none"
+                />
               </div>
-              <h1 className="text-[#FAFAFA]  mt-3 font-normal md:font-semibold   text-[14px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px] ">
-                Keep in Touch
-              </h1>
+              <div className="">
+                <label
+                  htmlFor="name"
+                  className="block text-[#04374B] text-sm  mb-2"
+                >
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                  className="w-full px-3  border rounded-md bg-[#F6F0F0] p-4 focus:outline-none"
+                />
+              </div>
+              <div className="">
+                <label
+                  htmlFor="name"
+                  className="block text-[#04374B] text-sm  mb-2"
+                >
+                  Phone
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Phone Number"
+                  required
+                  className="w-full px-3  border rounded-md bg-[#F6F0F0] p-4 focus:outline-none"
+                />
+              </div>
+              <div className="">
+                <label
+                  htmlFor="name"
+                  className="block text-[#04374B]text-sm  mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your Email"
+                  required
+                  className="w-full px-3  border rounded-md bg-[#F6F0F0] p-4 focus:outline-none"
+                />
+              </div>
             </div>
 
-            <div className="forms  md:mt-[10px]">
-              <form className="px-10">
-                <div className="npem4 md:flex  justify-between gap-4">
-                  {/* name and phone */}
-                  <div className="name_phone grow ">
-                    {/* NAME */}
-                    <div className="relative z-0 w-full mb-5 group mt-1">
-                      <input
-                        type="text"
-                        name="floating_name"
-                        id="floating_name"
-                        className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px]   text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
-                        placeholder=" "
-                        required
-                      />
-                      <label
-                        htmlFor="floating_name"
-                        className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                      >
-                        Name*
-                      </label>
-                    </div>
-                    {/* PHONE */}
-                    <div className="relative z-0 w-full mb-5 group mt-1">
-                      <input
-                        type="text"
-                        name="floating_phone"
-                        id="floating_phone"
-                        className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px] text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
-                        placeholder=" "
-                        required
-                      />
-                      <label
-                        htmlFor="floating_phone"
-                        className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                      >
-                        Phone*
-                      </label>
-                    </div>
-                  </div>
-
-                  {/* email and subject */}
-                  <div className="email_subject grow ">
-                    {/* EMAIL */}
-                    <div className="relative z-0 w-full mb-5 group mt-1">
-                      <input
-                        type="email"
-                        name="floating_email"
-                        id="floating_email"
-                        className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px] text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
-                        placeholder=" "
-                        required
-                      />
-                      <label
-                        htmlFor="floating_email"
-                        className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                      >
-                        Email*
-                      </label>
-                    </div>
-
-                    {/* SUBJECT */}
-                    <div className="relative z-0 w-full mb-5 group mt-1 hidden md:block">
-                      <input
-                        type="email"
-                        name="floating_subject"
-                        id="floating_subject"
-                        className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px] text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
-                        placeholder=" "
-                        required
-                      />
-                      <label
-                        htmlFor="floating_subject"
-                        className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                      >
-                        Subject*
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                {/* MESSAGE */}
-                <div className="relative z-0 w-full mb-5 group mt-1">
-                  <input
-                    type="email"
-                    name="floating_message"
-                    id="floating_message"
-                    className="block py-2.5 px-0 w-full text-[10px] md:text-[10px] lg:text-[14px] text-[#FAFAFA] bg-transparent border-0 border-b-2  appearance-none  focus:outline-none focus:ring-0 border-[#677E87] focus:border-[#FAFAFA] peer"
-                    placeholder=" "
-                    required
-                  />
-                  <label
-                    htmlFor="floating_message"
-                    className="peer-focus:font-medium absolute text-[10px] md:text-[10px] lg:text-[14px] text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#FAFAFA] poi peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >
-                    Message*
-                  </label>
-                </div>
-                <div className="text-center md:text-left">
-                  <button
-                    type="button"
-                    className="focus:outline-none text-white bg-[#DC272F] hover:bg-red-800 font-medium rounded-md text-[10px] md:text-[10px] lg:text-[14px]   me-2 mb-2 w-[89px]  h-[22px] md:w-[93px]  md:h-[29px] lg:w-[138px]  lg:h-[56px] lg:text-[16px] lg:font-medium"
-                  >
-                    Submit Now
-                  </button>
-                </div>
-              </form>
+            <div className="my-4">
+              <label
+                htmlFor="message"
+                className="block text-[#04374B] text-sm font-light mb-2"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Type somthing?"
+                required
+                className="w-full px-3 text-sm border rounded-md bg-[#F6F0F0] p-4 focus:outline-none"
+              ></textarea>
             </div>
-          </div>
+            <div className=" grid grid-cols-2 md:hidden ">
+              <button
+                type="button"
+                className="text-gray-900 bg-white border border-gray-300   rounded-lg px-5 py-2.5 me-2 mb-2 text-xs font-light"
+              >
+                Enquire about staff outsourcing!
+              </button>
+              <button
+                type="button"
+                className="text-gray-900 bg-white border border-gray-300   rounded-lg px-5 py-2.5 me-2 mb-2 text-xs font-light"
+              >
+                Enquire about staff outsourcing!
+              </button>
+              <button
+                type="button"
+                className="text-gray-900 bg-white border border-gray-300   rounded-lg px-5 py-2.5 me-2 mb-2 text-xs font-light"
+              >
+                Enquire about staff outsourcing!
+              </button>
+              <button
+                type="button"
+                className="text-gray-900 bg-white border border-gray-300   rounded-lg px-5 py-2.5 me-2 mb-2 text-xs font-light"
+              >
+                {" "}
+                Enquire about staff outsourcing!
+              </button>
+            </div>
+            <button
+              type="submit"
+              className="bg-[#04374B] text-white px-4 text-sm font-extralight py-2 rounded-md  w-full"
+            >
+              SEND YOUR MESSAGE
+            </button>
+          </form>
         </div>
-      </div>
-
-      {/* logo */}
-      <div className="mt-[378px] md:mt-[100px] lg:mt-[110px] py-10 md:px-1 md:mx-10">
-        <div className="adds flex flex-wrap gap-3 justify-evenly items-center">
-          {/* logo 1*/}
-          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
-            <Image src={"/logo1.png"} alt="logo1.png " fill />
-          </div>
-          {/* logo 2*/}
-          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
-            <Image src={"/logo2.png"} alt="logo2.png " fill />
-          </div>
-          {/* logo 3*/}
-          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
-            <Image src={"/logo3.png"} alt="logo3.png " fill />
-          </div>
-          {/* logo 4*/}
-          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
-            <Image src={"/logo4.png"} alt="logo4.png " fill />
-          </div>
-          {/* logo 5*/}
-          <div className="h-[30px] w-[125px] md:h-[37px] md:w-[125px] lg:h-[48px] lg:w-[160px] relative">
-            <Image src={"/logo5.png"} alt="logo5.png " fill />
-          </div>
+      </section>
+      <section className="lg:px-[80px]   px-[34px] sm:px-[47px] grid md:grid-cols-5 grid-cols-2 gap-5 py-10">
+        <div className="relative   items-center lg:w-[160px] lg:h-[48px] w-[105px]  md:h-[38px]  h-[30px] mx-auto">
+          <Image
+            src="/image/Page-1.png"
+            fill
+            alt="Picture of the author"
+            className=""
+          />
         </div>
-      </div>
+        <div className="relative lg:w-[160px] lg:h-[48px] w-[105px] md:h-[38px]  h-[30px] mx-auto">
+          <Image
+            src="/image/Logo5.png"
+            fill
+            alt="Picture of the author"
+            className=""
+          />
+        </div>
+        <div className="relative lg:w-[160px] lg:h-[48px] w-[105px] md:h-[38px]  h-[30px] mx-auto">
+          <Image
+            src="/image/6.png"
+            fill
+            alt="Picture of the author"
+            className=""
+          />
+        </div>
+        <div className="relative lg:w-[160px] lg:h-[48px] w-[105px] md:h-[38px]  h-[30px] mx-auto">
+          <Image
+            src="/image/9.png"
+            fill
+            alt="Picture of the author"
+            className=""
+          />
+        </div>
+        <div className="md:col-span-1 col-span-2  flex justify-center ">
+        <div className="relative lg:w-[160px] lg:h-[48px] w-[105px] md:h-[38px]  h-[30px] ">
+          <Image
+            src="/image/10.png"
+            fill
+            alt="Picture of the author"
+            className=""
+          />
+        </div>
+        </div>
+      
+      </section>
     </main>
   );
 }
