@@ -152,7 +152,7 @@ export default function RootLayout({
                 <form className="w-full max-w-xs">
                   <div className="flex items-center border-b border-[#CFCFCF] py-2">
                     <input
-                      className="appearance-none bg-transparent border-none w-full text-[#CFCFCF] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                      className="appearance-none  bg-transparent border-none w-full text-[#CFCFCF] mr-3 py-1 px-2 leading-tight focus:outline-none"
                       type="text"
                       placeholder="Enter email Address"
                       aria-label="Full name"
