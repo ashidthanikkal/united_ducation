@@ -217,7 +217,7 @@ export default function Home() {
       </div>
 
       {/* mission and vision */}
-      <div className="mission_vison h-[450px] bg-[#14516A] md:h-[482px] lg:h-[800px] lg:bg-[#F8F8F8]">
+      <div className="mission_vison h-[430px] bg-[#14516A] md:h-[500px] lg:h-[800px] lg:bg-[#F8F8F8]">
         <div className=" md:flex-row flex-col-reverse flex lg:flex-row px-10 md:pt-10">
           <div className="mission_visonchild1 w-full md:w-1/2">
             <div className="sm:p-[.25rem] md:p-[1.5rem]">
@@ -238,8 +238,8 @@ export default function Home() {
                 </div>
 
                 <div className=" w-full ">
-                  <p className="font-semibold text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
-                    UNITED EDUCAION
+                  <p className="hidden lg:block font-semibold text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
+                    UNITED EDUCATION
                   </p>
 
                   <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
@@ -257,15 +257,16 @@ export default function Home() {
                 </div>
 
                 <div className="overview2 w-full ">
-                  <p className="font-semibold text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
-                    UNITED EDUCAION
+                  <p className="hidden lg:block font-semibold text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#DC272F] mt-2 text-left">
+                    UNITED EDUCATION
                   </p>
 
                   <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] text-white lg:text-[#04374B] mt-2 text-left">
-                    Our vision is having a trained, knowledgeable and skillful
-                    future generation in our country who can guarantee a better
-                    life for themselves and the whole nation by been powerful
-                    producible human resources.
+                    Our mission is to make professional, advanced education and
+                    training available for most governmental institutions,
+                    schools, universities, businesses and individuals throughout
+                    the country and equip them with tools to shape their future
+                    and reach their goals in the community and workplace.
                   </p>
                 </div>
               </div>
@@ -396,9 +397,9 @@ export default function Home() {
             Alternative
           </button>
         </div>
-        
+
         <div className="md:hidden">
-        <div className="w-10 border-t-2 border-[#14516A] flex justify-center items-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
+          <div className="w-10 border-t-2 border-[#14516A] flex justify-center items-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] mt-2.5 lg:text-[18px]  text-[#DC272F]"></div>
 
           <hr />
         </div>

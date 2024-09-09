@@ -201,6 +201,10 @@ export default function RootLayout({
               </div>{" "}
             </div>
           </div>
+          <div className="mx-10">
+            <hr className="text-[#4D6873]"/>
+            <p className="py-3 text-center text-[10px] leading-[8px] md:leading-[12px] md:text-[12px] lg:leading-[28.8px] lg:text-[18px]  text-[#CFCFCF]">© 2024 UNITED EDUCATION. ALL RIGHT RESERVED.</p>
+          </div>
         </footer>
       </body>
     </html>
