@@ -172,10 +172,10 @@ export default function RootLayout({
               <div className="about">
                 <h1 className="text-white text-[12px] lg:text-[24px] lg:mt-5 mt-3">About</h1>
                 <ul className="text-[#CFCFCF] lg:text-lg  text-sm lg:mt-5 mt-3">
-                  <li className=" md:text-[12px] md:leading-[12px] lg:text-[18px] lg:leading-[18px] lg:mt-5 mt-3">Our Story</li>
-                  <li  className=" md:text-[12px] md:leading-[12px] lg:text-[18px] lg:leading-[18px] lg:mt-5 mt-3">Treatments Safer</li>
-                  <li className=" md:text-[12px] md:leading-[12px] lg:text-[18px] lg:leading-[18px] lg:mt-5 mt-3">Journal</li>
-                  <li className=" md:text-[12px] md:leading-[12px] lg:text-[18px] lg:leading-[18px] lg:mt-5 mt-3">Candles</li>
+                  <li className="text-[10px] md:text-[12px] md:leading-[12px] lg:text-[18px] lg:leading-[18px] lg:mt-5 mt-3">Our Story</li>
+                  <li  className="text-[10px] md:text-[12px] md:leading-[12px] lg:text-[18px] lg:leading-[18px] lg:mt-5 mt-3">Treatments Safer</li>
+                  <li className="text-[10px] md:text-[12px] md:leading-[12px] lg:text-[18px] lg:leading-[18px] lg:mt-5 mt-3">Journal</li>
+                  <li className="text-[10px] md:text-[12px] md:leading-[12px] lg:text-[18px] lg:leading-[18px] lg:mt-5 mt-3">Candles</li>
                 </ul>
               </div>{" "}
               <div className="Company">
