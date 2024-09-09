@@ -3,7 +3,7 @@ import { IoIosArrowForward, IoIosArrowRoundForward } from "react-icons/io";
 
 export default function Home() {
   return (
-    <main className="lg:w-screen">
+    <main>
       {/* banner img */}
       <div className="flex flex-col items-center justify-between w-100 static">
         <div>
@@ -56,7 +56,7 @@ export default function Home() {
             with the rest of the world.
           </p>
 
-          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 text-left">
+          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 lg:mt-4 text-left">
             UE is specialized in educational and training services, ranging from
             language education, business skills development, and special
             technical and vocational training services.
@@ -67,7 +67,7 @@ export default function Home() {
             </span>
           </p>
 
-          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 hidden md:block">
+          <p className="font-normal text-[10px] leading-[12.8px] md:leading-[22.4px] md:text-[14px] lg:leading-[28.8px] lg:text-[17px] mt-2 lg:mt-4 hidden md:block">
             United Education has partnership with the world’s best educational
             services providers, accreditation and certification bodies and
             provide the best of services to our customers throughout Iraq and
@@ -429,7 +429,7 @@ export default function Home() {
             </div>
 
             <div className="child2 w-[60%]">
-              <p className="font-normal text-right text-[10px] md:text-[12px] lg:text-[18px]">
+              <p className="font-normal text-right text-[6px] md:text-[12px] lg:text-[18px]">
                 UE is specialized in educational and training services, ranging
                 from language education, business skills development, and
                 special technical and vocational training services.
@@ -445,7 +445,7 @@ export default function Home() {
             <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
               650+
             </p>
-            <h1 className="font-normal text-[10px] md:text-[12px] lg:text-[18px]">
+            <h1 className="font-normal text-[7px] md:text-[10px] lg:text-[18px]">
               Project Completed
             </h1>
           </div>
@@ -453,7 +453,7 @@ export default function Home() {
             <p className=" font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
               200+
             </p>
-            <h1 className="font-normal text-[10px] md:text-[12px] lg:text-[18px]">
+            <h1 className="font-normal text-[7px] md:text-[12px] lg:text-[18px]">
               Team Engineers
             </h1>
           </div>
@@ -461,7 +461,7 @@ export default function Home() {
             <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
               300+
             </p>
-            <h1 className="font-normal text-[10px] md:text-[12px] lg:text-[18px]">
+            <h1 className="font-normal text-[7px] md:text-[12px] lg:text-[18px]">
               Clients Worldwide
             </h1>
           </div>
@@ -469,7 +469,7 @@ export default function Home() {
             <p className="font-semibold md:font-semibold  leading-[16.8px] text-[12px] md:leading-[16.8px] md:text-[20px] lg:leading-[52px] lg:text-[36px]">
               10+
             </p>
-            <h1 className="font-normal text-[10px] md:text-[12px] lg:text-[18px]">
+            <h1 className="font-normal text-[7px] md:text-[12px] lg:text-[18px]">
               Years of Experiences
             </h1>
           </div>
