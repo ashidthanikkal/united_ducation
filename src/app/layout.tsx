@@ -132,7 +132,7 @@ export default function RootLayout({
                   <input
                     type="text"
                     placeholder="Enter email address "
-                    className="border-b-2 w-full  text-xs py-3  border-[#4D6873] bg-[#022837] lg:mt-5 mt-2 text-[#4D6873]"
+                    className="border-b-2 w-full  text-xs py-3 focus:outline-none  border-[#4D6873] bg-[#022837] lg:mt-5 mt-2 text-[#4D6873]"
                   />
                   <FaArrowRight className="absolute right-0 bottom-2 my-1 text-white" />
                 </div>

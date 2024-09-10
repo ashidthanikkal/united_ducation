@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute md:w-4/5 w-4/5 lg:-bottom-40 md:-bottom-12 -bottom-[320px] left-1/2 transform -translate-x-1/2 ">
+        <div className="absolute md:w-4/5 w-4/5 md:top-[550px] top-[450px] left-1/2 transform -translate-x-1/2 ">
           <div className="grid md:grid-cols-3  rounded-xl grid-cols-1 shadow-md bg-white md:px-0 sm:px-20 px-5  md:py-5 py-0">
             <div className="md:flex block md:px-0  lg:py-5">
               <div className=" md:px-10 md:py-0 py-4 flex flex-col">
@@ -134,7 +134,7 @@ export default function Home() {
       </section>
 
       {/* course */}
-      <section className="lg:px-[80px] px-[34px] sm:px-[47px] md:mt-20  lg:mt-56 mt-96  mb-10">
+      <section className="lg:px-[80px] px-[34px] sm:px-[47px]  md:mt-44 mt-96  mb-10">
         <div className="flex items-center">
           <div className="w-14 border-t-2 border-[#DC272F] "></div>
 
